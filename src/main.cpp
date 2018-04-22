@@ -1364,22 +1364,22 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     int64_t nSubsidy = 0 * COIN;
 
     if (nHeight == 1) {
-        nSubsidy = 4000000 * COIN; // premine
+        nSubsidy = 2000000 * COIN; // premine
     }
     else if (nHeight > 1 && nHeight <= 100) {
         nSubsidy = 1 * COIN; // instamine prevention
     }
     else if (nHeight > 100 && nHeight <= 250) {
-        nSubsidy = 5 * COIN; // instamine prevention
+        nSubsidy = 1 * COIN; // instamine prevention
     }
 	else if (nHeight > 250 && nHeight <= 500) {
-        nSubsidy = 10 * COIN; // instamine prevention
+        nSubsidy = 2 * COIN; // instamine prevention
     }
     else if (nHeight > 500 && nHeight <= 2000) {
-        nSubsidy = 20 * COIN; // initial block reward
+        nSubsidy = 3 * COIN; // initial block reward
     }
     else if (nHeight > 2000 && nHeight <= 225000) {
-        nSubsidy = 10 * COIN; // initial block reward
+        nSubsidy = 2 * COIN; // initial block reward
     }
     else if (nHeight > 225000) {
         nSubsidy = 0 * COIN; // initial block reward
@@ -1395,23 +1395,23 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     int64_t nSubsidy = 0;
 
     if (pindexBest->nHeight+1 > 2250 && pindexBest->nHeight+1 <= 225000)  {
-        nSubsidy = 25 * COIN;
+        nSubsidy = 4 * COIN;
     }
     else if (pindexBest->nHeight+1 > 225000 && pindexBest->nHeight+1 <= 400000)  {
-        nSubsidy = 15 * COIN;
+        nSubsidy = 3 * COIN;
     }
     else if (pindexBest->nHeight+1 > 400000 && pindexBest->nHeight+1 <= 600000) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 2 * COIN;
     }
     else if (pindexBest->nHeight+1 > 600000 && pindexBest->nHeight+1 <= 850000) {
-        nSubsidy = 5 * COIN;
+        nSubsidy = 1 * COIN;
     }
     else if (pindexBest->nHeight+1 > 850000 && pindexBest->nHeight+1 <= 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 3 * COIN;
+        nSubsidy = 0.5 * COIN;
     } else if (pindexBest->nHeight+1 > 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 3 * COIN;
+        nSubsidy = 0.5 * COIN;
         nSubsidy >>= ((pindexBest->nHeight + 225000) / 1050000);
     }
 
@@ -1423,29 +1423,28 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0;
 
     if (pindexBest->nHeight+1 > 2250 && pindexBest->nHeight+1 <= 225000)  {
-        nSubsidy = 25 * COIN;
+        nSubsidy = 4 * COIN;
     }
     else if (pindexBest->nHeight+1 > 225000 && pindexBest->nHeight+1 <= 400000)  {
-        nSubsidy = 15 * COIN;
+        nSubsidy = 3 * COIN;
     }
     else if (pindexBest->nHeight+1 > 400000 && pindexBest->nHeight+1 <= 600000) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 2 * COIN;
     }
     else if (pindexBest->nHeight+1 > 600000 && pindexBest->nHeight+1 <= 850000) {
-        nSubsidy = 5 * COIN;
+        nSubsidy = 1 * COIN;
     }
     else if (pindexBest->nHeight+1 > 850000 && pindexBest->nHeight+1 <= 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 3 * COIN;
+        nSubsidy = 0.5 * COIN;
     } else if (pindexBest->nHeight+1 > 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 3 * COIN;
+        nSubsidy = 0.5 * COIN;
         nSubsidy >>= ((pindexBest->nHeight + 225000) / 1050000);
     }
 
     return nSubsidy;
 }
-
 static int64_t nTargetTimespan = 5 * 90;
 
 // ppcoin: find last block index up to pindex
