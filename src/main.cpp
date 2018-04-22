@@ -84,7 +84,7 @@ map<uint256, int64_t> mapRejectedBlocks;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Intermodalcoin Signed Message:\n";
+const string strMessageMagic = "EMCoin Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
