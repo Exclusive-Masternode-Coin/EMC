@@ -253,6 +253,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
     CKey keyMasternode;
     CScript donationAddress = CScript();
     int donationPercentage = 0;
+	int nMnCount = mnodeman.CountEnabled();
 
     if(!darkSendSigner.SetKey(strKeyMasternode, errorMessage, keyMasternode, pubKeyMasternode))
     {
@@ -264,6 +265,11 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         errorMessage = "could not allocate vin";
         LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
         return false;
+    }
+	if(nMnCount > 150)
+    {
+            LogPrintf("ActiveMasternode::Register - The limit of 150 Masternodes has been reached on the EMC Blockchain\n");
+            return false;
     }
     CEmCoinAddress address;
     if (strDonationAddress != "")
@@ -286,7 +292,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         {
             LogPrintf("ActiveMasternode::Register - Donation Percentage Out Of Range\n");
             return false;
-        }
+        }		
     }
 
 	return Register(vin, CService(strService, true), keyCollateralAddress, pubKeyCollateralAddress, keyMasternode, pubKeyMasternode, donationAddress, donationPercentage, errorMessage);
