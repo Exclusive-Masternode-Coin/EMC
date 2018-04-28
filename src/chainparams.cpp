@@ -179,8 +179,8 @@ public:
         //LogPrintf("Display test genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
 	    //LogPrintf("Display test merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(genesis.hashMerkleRoot == uint256("96e3fe21137b9d992a45050d0d3c2a5da4befa43d5b755327ff5b0ebf9bf98f6"));
-        assert(hashGenesisBlock == uint256("4dbcf7bc95210e1aa235bc8438ac9d974da36da4f9eb9b4293b87c3d4242ccc9"));
+        assert(genesis.hashMerkleRoot == uint256("4dbcf7bc95210e1aa235bc8438ac9d974da36da4f9eb9b4293b87c3d4242ccc9"));
+        assert(hashGenesisBlock == uint256("96e3fe21137b9d992a45050d0d3c2a5da4befa43d5b755327ff5b0ebf9bf98f6"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
