@@ -112,8 +112,8 @@ public:
 	    LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 		
-        assert(hashGenesisBlock == uint256(""));
-        assert(genesis.hashMerkleRoot == uint256(""));
+        assert(hashGenesisBlock == uint256("cc6199f14f601742bcfa3ab539020d6d4627a4aee12471eb5f1a06cc5b34c528"));
+        assert(genesis.hashMerkleRoot == uint256("4dbcf7bc95210e1aa235bc8438ac9d974da36da4f9eb9b4293b87c3d4242ccc9"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,33); // E
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,21);
