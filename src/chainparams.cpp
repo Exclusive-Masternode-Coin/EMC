@@ -108,12 +108,12 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        //LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
-	    //LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
+	    LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 		
-        assert(hashGenesisBlock == uint256("782c0c575263f878326f3c84a57b7e32c00f90488276d50c47a44c2a361bcba6"));
-        assert(genesis.hashMerkleRoot == uint256("b486eff7fe77d10cf13f72571b3a9c7619b743e877220fe911f04f3e98cf9d7e"));
+        assert(hashGenesisBlock == uint256(""));
+        assert(genesis.hashMerkleRoot == uint256(""));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,33); // E
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,21);
@@ -176,11 +176,11 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        //LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
-	    //LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        LogPrintf("Display test genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
+	    LogPrintf("Display test merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(genesis.hashMerkleRoot == uint256("b486eff7fe77d10cf13f72571b3a9c7619b743e877220fe911f04f3e98cf9d7e"));
-        assert(hashGenesisBlock == uint256("ef2600a02dd35a5757226d5d759515d5d9f2ee09a3eb75904232d482f48495e2"));
+        assert(genesis.hashMerkleRoot == uint256(""));
+        assert(hashGenesisBlock == uint256(""));
 
         vFixedSeeds.clear();
         vSeeds.clear();
