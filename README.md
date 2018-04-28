@@ -1,7 +1,7 @@
-# The EmCoin
+# The EMC
 
-We introduce you a new cryptocoin called EmCoin.
-EmCoin is a safe, anonymous, fast and highly profitable coin with Masternodes and advanced reward system with Long-Term Development & Support.
+We introduce you a new cryptocoin called EMC.
+EMC is a safe, anonymous, fast and highly profitable coin with Masternodes and advanced reward system with Long-Term Development & Support.
 Welcome to the future!
 
 ## Main futures:
@@ -49,5 +49,5 @@ Welcome to the future!
 
 ###### License
 
-EmCoin is released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
+EMC is released under the terms of the MIT license. See COPYING for more information or see http://opensource.org/licenses/MIT.
 

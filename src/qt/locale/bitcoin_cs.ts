@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EmCoin</source>
+        <source>About EMC</source>
         <translation>O Transferu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EmCoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;EMC&lt;/b&gt; version</source>
         <translation>Verze &lt;b&gt;Transferu&lt;/b&gt; </translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</source>
+Copyright © 2014 The EMC developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</translation>
+Copyright © 2014 The EMC developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your EmCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tato jsou tvé EmCoin adresy pro příjem plateb. Každému odesílateli můžeš dát jinou adresu, aby jsi mohl sledovat, kdo ti platí.</translation>
+        <source>These are your EMC addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tato jsou tvé EMC adresy pro příjem plateb. Každému odesílateli můžeš dát jinou adresu, aby jsi mohl sledovat, kdo ti platí.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a EmCoin address</source>
-        <translation>Podepiš zprávu, aby jsi dokázal, že vlastníš tuto EmCoin adresu.</translation>
+        <source>Sign a message to prove you own a EMC address</source>
+        <translation>Podepiš zprávu, aby jsi dokázal, že vlastníš tuto EMC adresu.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified EmCoin address</source>
-        <translation>Ověř zprávu, aby jsi zajistil, že byla podepsaná určitou EmCoin adresou.</translation>
+        <source>Verify a message to ensure it was signed with a specified EMC address</source>
+        <translation>Ověř zprávu, aby jsi zajistil, že byla podepsaná určitou EMC adresou.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>EmCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Pro dokončení procesu šifrování se EmCoin nyní zavře, Pamatuj, že zašifrování tvé peněženky nemůže plně ochránit tvé mince před krádeží, pokud máš počítač infikován malwerem.</translation>
+        <source>EMC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Pro dokončení procesu šifrování se EMC nyní zavře, Pamatuj, že zašifrování tvé peněženky nemůže plně ochránit tvé mince před krádeží, pokud máš počítač infikován malwerem.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,7 +352,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about EmCoin</source>
+        <source>Show information about EMC</source>
         <translation>Zobraz informace a Transferu</translation>
     </message>
     <message>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a EmCoin address</source>
-        <translation>Odešli mince na EmCoin adresu</translation>
+        <source>Send coins to a EMC address</source>
+        <translation>Odešli mince na EMC adresu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for EmCoin</source>
-        <translation>Uprav možnosti konfigurace pro EmCoin</translation>
+        <source>Modify configuration options for EMC</source>
+        <translation>Uprav možnosti konfigurace pro EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>EmCoin</source>
-        <translation>EmCoin</translation>
+        <source>EMC</source>
+        <translation>EMC</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,7 +448,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About EmCoin</source>
+        <source>&amp;About EMC</source>
         <translation>&amp;O Transferu</translation>
     </message>
     <message>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>EmCoin client</source>
-        <translation>EmCoin klient</translation>
+        <source>EMC client</source>
+        <translation>EMC klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to EmCoin network</source>
-        <translation><numerusform>%n aktivní spojení do EmCoin sítě</numerusform><numerusform>%n aktivních spojení do EmCoin sítě</numerusform><numerusform>%n aktivních spojení do EmCoin sítě</numerusform></translation>
+        <source>%n active connection(s) to EMC network</source>
+        <translation><numerusform>%n aktivní spojení do EMC sítě</numerusform><numerusform>%n aktivních spojení do EMC sítě</numerusform><numerusform>%n aktivních spojení do EMC sítě</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid EmCoin address or malformed URI parameters.</source>
-        <translation>URI nejde rozparsovat! To může být způsobeno neplatnou EmCoin adresou nebo chybnými URI parametry.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EMC address or malformed URI parameters.</source>
+        <translation>URI nejde rozparsovat! To může být způsobeno neplatnou EMC adresou nebo chybnými URI parametry.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. EmCoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažné chybě. EmCoin již nemůže dále bezpečně pokračovat a bude ukončen.</translation>
+        <source>A fatal error occurred. EMC can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažné chybě. EMC již nemůže dále bezpečně pokračovat a bude ukončen.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EmCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná EmCoin adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EMC address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná EMC adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>EmCoin-Qt</source>
-        <translation>EmCoin-Qt</translation>
+        <source>EMC-Qt</source>
+        <translation>EMC-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EmCoin after logging in to the system.</source>
-        <translation>Automaticky spustit EmCoin po přihlášení do systému.</translation>
+        <source>Automatically start EMC after logging in to the system.</source>
+        <translation>Automaticky spustit EMC po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EmCoin on system login</source>
-        <translation>&amp;Spustit EmCoin při přihlášení do systému</translation>
+        <source>&amp;Start EMC on system login</source>
+        <translation>&amp;Spustit EMC při přihlášení do systému</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EmCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otevřít port EmCoin klienta na routeru. Funguje to jen tehdy, když router podporuje UPnP a je povoleno.</translation>
+        <source>Automatically open the EMC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otevřít port EMC klienta na routeru. Funguje to jen tehdy, když router podporuje UPnP a je povoleno.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1174,8 +1174,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EmCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připoj se do sítě EmCoin přes SOCKS proxy (např. při připojení přes Tor)</translation>
+        <source>Connect to the EMC network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připoj se do sítě EMC přes SOCKS proxy (např. při připojení přes Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,7 +1249,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EmCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting EMC.</source>
         <translation>Zde můžeš nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartu Transferu.</translation>
     </message>
     <message>
@@ -1316,7 +1316,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EmCoin.</source>
+        <source>This setting will take effect after restarting EMC.</source>
         <translation>Nastavení se projeví až po restartu Transferu.</translation>
     </message>
     <message>
@@ -1335,8 +1335,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace můžou být zastaralé. Tvá peněženka se automaticky synchronizuje s EmCoin sítí po navázaní spojení, ale tento proces ještě není dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace můžou být zastaralé. Tvá peněženka se automaticky synchronizuje s EMC sítí po navázaní spojení, ale tento proces ještě není dokončený.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1577,8 +1577,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EmCoin-Qt help message to get a list with possible EmCoin command-line options.</source>
-        <translation>Zobrazit EmCoin-Qt nápovědu pro zobrazení seznam dostupným možností příkazového řádku.</translation>
+        <source>Show the EMC-Qt help message to get a list with possible EMC command-line options.</source>
+        <translation>Zobrazit EMC-Qt nápovědu pro zobrazení seznam dostupným možností příkazového řádku.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1597,12 +1597,12 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>EmCoin - Debug window</source>
-        <translation>EmCoin - Ladící okno</translation>
+        <source>EMC - Debug window</source>
+        <translation>EMC - Ladící okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EmCoin Core</source>
+        <source>EMC Core</source>
         <translation>Jádro Transferu</translation>
     </message>
     <message>
@@ -1612,7 +1612,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EmCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the EMC debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Otevři logovací soubor Transferu z aktuálního datového adresáře. Pro velké logy to může trvat několik sekund.</translation>
     </message>
     <message>
@@ -1622,8 +1622,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the EmCoin RPC console.</source>
-        <translation>Vítej v EmCoin RPC konzoli.</translation>
+        <source>Welcome to the EMC RPC console.</source>
+        <translation>Vítej v EMC RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1816,8 +1816,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Napiš EmCoin adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Napiš EMC adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1916,8 +1916,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid EmCoin address</source>
-        <translation>UPOZORNĚNÍ: Neplatná EmCoin adresa</translation>
+        <source>WARNING: Invalid EMC address</source>
+        <translation>UPOZORNĚNÍ: Neplatná EMC adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1990,8 +1990,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadej EmCoin adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadej EMC adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2051,8 +2051,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EmCoin address</source>
-        <translation>Podepiš zprávu jako důkaz, že vlastníš tuto EmCoin adresu</translation>
+        <source>Sign the message to prove you own this EMC address</source>
+        <translation>Podepiš zprávu jako důkaz, že vlastníš tuto EMC adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2083,8 +2083,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EmCoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou EmCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified EMC address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou EMC adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2094,8 +2094,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadej EmCoin adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadej EMC adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2104,8 +2104,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EmCoin signature</source>
-        <translation>Zadej EmCoin podpis</translation>
+        <source>Enter EMC signature</source>
+        <translation>Zadej EMC podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2683,7 +2683,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>EmCoin version</source>
+        <source>EMC version</source>
         <translation>Verze Transferu</translation>
     </message>
     <message>
@@ -2693,8 +2693,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or emcoind</source>
-        <translation>Pošli příkaz na -server nebo emcoind</translation>
+        <source>Send command to -server or emcd</source>
+        <translation>Pošli příkaz na -server nebo emcd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: emcoin.conf)</source>
-        <translation>Urči konfigurační soubor (výchozí: emcoin.conf)</translation>
+        <source>Specify configuration file (default: emc.conf)</source>
+        <translation>Urči konfigurační soubor (výchozí: emc.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: emcoind.pid)</source>
-        <translation>Urči pid soubor (výchozí: emcoind.pid)</translation>
+        <source>Specify pid file (default: emcd.pid)</source>
+        <translation>Urči pid soubor (výchozí: emcd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,13 +2736,13 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emcoinrpc
+rpcuser=emcrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EMC Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2848,8 +2848,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EmCoin will not work properly.</source>
-        <translation>Upozornění: Zkontroluj prosím datum a čas tvého počítače! Pokud jdou tvé hodiny špatně, tak EmCoin nebude pracovat správně. </translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EMC will not work properly.</source>
+        <translation>Upozornění: Zkontroluj prosím datum a čas tvého počítače! Pokud jdou tvé hodiny špatně, tak EMC nebude pracovat správně. </translation>
     </message>
     <message>
         <location line="+132"/>
@@ -2943,8 +2943,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+30"/>
-        <source>Set maximum block size in bytes (default: 225000)</source>
-        <translation>Nastav maximální velikost bloku v bajtech (výchozí: 225000)</translation>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation>Nastav maximální velikost bloku v bajtech (výchozí: 250000)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3155,7 +3155,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. EmCoin is shutting down.</source>
+        <source>Initialization sanity check failed. EMC is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3220,13 +3220,13 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EmCoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of EMC</source>
         <translation>Chyba načítání wallet.dat: Peněženka vyžaduje novější verzi Transferu</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart EmCoin to complete</source>
-        <translation>Peněženka by potřebovala být přepsána: restartuj EmCoin pro dokončení</translation>
+        <source>Wallet needed to be rewritten: restart EMC to complete</source>
+        <translation>Peněženka by potřebovala být přepsána: restartuj EMC pro dokončení</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3290,8 +3290,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. EmCoin is probably already running.</source>
-        <translation>Nemůžu se svázat s %s na tomto počítači. EmCoin nejspíše již běží.</translation>
+        <source>Unable to bind to %s on this computer. EMC is probably already running.</source>
+        <translation>Nemůžu se svázat s %s na tomto počítači. EMC nejspíše již běží.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3330,7 +3330,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EmCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EMC is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

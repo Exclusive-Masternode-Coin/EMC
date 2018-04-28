@@ -38,7 +38,7 @@
        </property>
        <widget class="QWidget" name="tab">
         <attribute name="title">
-         <string>EmCoin Network</string>
+         <string>EMC Network</string>
         </attribute>
         <layout class="QGridLayout" name="gridLayout">
          <item row="1" column="0">
@@ -147,7 +147,7 @@
            <item>
             <widget class="QLabel" name="label_2">
              <property name="text">
-              <string>EmCoin Node Count:</string>
+              <string>EMC Node Count:</string>
              </property>
             </widget>
            </item>
@@ -213,7 +213,7 @@
             <widget class="QTableWidget" name="tableWidget_2">
              <property name="minimumSize">
               <size>
-               <width>695</width>
+               <width>550</width>
                <height>0</height>
               </size>
              </property>

@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = emcoin-qt
+TARGET = emc-qt
 VERSION = 1.0.0.2
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 QT += network printsupport
@@ -271,7 +271,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/tinyformat.h \
     src/stealth.h \
     src/qt/flowlayout.h \
-    src/qt/darksendconfig.h \
     src/masternode.h \
     src/darksend.h \
     src/darksend-relay.h \
@@ -400,7 +399,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/support/cleanse.cpp \
     src/stealth.cpp \
     src/qt/flowlayout.cpp \
-    src/qt/darksendconfig.cpp \
     src/masternode.cpp \
     src/darksend.cpp \
     src/darksend-relay.cpp \
@@ -462,7 +460,6 @@ FORMS += \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
-    src/qt/forms/darksendconfig.ui \
     src/qt/forms/masternodemanager.ui \
     src/qt/forms/addeditadrenalinenode.ui \
     src/qt/forms/adrenalinenodeconfigdialog.ui \
@@ -609,7 +606,7 @@ macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhan
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/bitcoin.icns
-macx:TARGET = "EmCoin-Qt"
+macx:TARGET = "EMC-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

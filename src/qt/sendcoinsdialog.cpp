@@ -43,7 +43,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a EmCoin address (e.g. ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a EMC address (e.g. SXZ1DpQPXqAq5pWGFjLgsAsxoSRM23cbNK)"));
 #endif
 
     addEntry();
@@ -570,7 +570,7 @@ bool SendCoinsDialog::handleURI(const QString &uri)
     // URI has to be valid
     if (GUIUtil::parseBitcoinURI(uri, &rv))
     {
-        CEmCoinAddress address(rv.address.toStdString());
+        CEMCAddress address(rv.address.toStdString());
         if (!address.IsValid())
             return false;
         pasteEntry(rv);
@@ -916,7 +916,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         CoinControlDialog::coinControl->destChange = CNoDestination();
         ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
 
-        CEmCoinAddress addr = CEmCoinAddress(text.toStdString());
+        CEMCAddress addr = CEMCAddress(text.toStdString());
 
         if (text.isEmpty()) // Nothing entered
         {
@@ -924,7 +924,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid EmCoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid EMC address"));
         }
         else // Valid address
         {

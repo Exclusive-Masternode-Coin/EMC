@@ -127,13 +127,13 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About EmCoin", 0));
-        label->setText(QApplication::translate("AboutDialog", "<b>EmCoin</b> version", 0));
+        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About EMC", 0));
+        label->setText(QApplication::translate("AboutDialog", "<b>EMC</b> version", 0));
         copyrightLabel->setText(QApplication::translate("AboutDialog", "Copyright \302\251 2009-2014 The Bitcoin developers\n"
 "Copyright \302\251 2012-2014 The NovaCoin developers\n"
 "Copyright \302\251 2014 The TransferCoin developers\n"
 "Copyright \302\251 2014-2015 Dash Developers\n"
-"Copyright \302\251 2017-2018 The EmCoin developers", 0));
+"Copyright \302\251 2017-2018 The EMC developers", 0));
         label_2->setText(QApplication::translate("AboutDialog", "\n"
 "This is experimental software.\n"
 "\n"

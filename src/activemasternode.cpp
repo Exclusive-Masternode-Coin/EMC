@@ -9,7 +9,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 6000 EMC input and register on the network
+// Bootup the masternode, look for a 5000 EMC input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -45,11 +45,37 @@ void CActiveMasternode::ManageStatus()
 
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString().c_str());
 
+        if(Params().NetworkID() == CChainParams::MAIN) {
+            if(service.GetPort() != 31507) {
+                notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - only 31507 is supported on mainnet.";
+                status = MASTERNODE_NOT_CAPABLE;
+                LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
+                return;
+            }
+        } else if(service.GetPort() == 31507) {
+            notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - 31507 is only supported on mainnet.";
+        }
+
         if(!ConnectNode((CAddress)service, service.ToString().c_str())){
             notCapableReason = "Could not connect to " + service.ToString();
             status = MASTERNODE_NOT_CAPABLE;
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
             return;
+        }
+
+        if(Params().NetworkID() == CChainParams::MAIN){
+            if(!(service.IsIPv4() && service.IsRoutable())) {
+                notCapableReason = "Invalid IP address (IPV4 ONLY)" + service.ToString();
+                status = MASTERNODE_NOT_CAPABLE;
+                LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
+                return;
+            }
+            if(!ConnectNode((CAddress)service, service.ToString().c_str())){
+                notCapableReason = "Could not connect to " + service.ToString();
+                status = MASTERNODE_NOT_CAPABLE;
+                LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
+                return;
+            }
         }
 
         if(pwalletMain->IsLocked()){
@@ -94,14 +120,13 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* donations are not supported in emcoin.conf */
+            /* donations are not supported in emc.conf */
             CScript donationAddress = CScript();
             int donationPercentage = 0;
 
             if(!Register(vin, service, keyCollateralAddress, pubKeyCollateralAddress, keyMasternode, pubKeyMasternode, donationAddress, donationPercentage, errorMessage)) {
                 LogPrintf("CActiveMasternode::ManageStatus() - Error on Register: %s\n", errorMessage.c_str());
             }
-
             return;
         } else {
             notCapableReason = "Could not find suitable coins!";
@@ -241,7 +266,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
         return false;
     }
-    CEmCoinAddress address;
+    CEMCAddress address;
     if (strDonationAddress != "")
     {
         if(!address.SetString(strDonationAddress))
@@ -258,13 +283,17 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
             return false;
         }
 
-        if(nMnCount > 150 )
+        if(donationPercentage < 0 || donationPercentage > 100)
+        {
+            LogPrintf("ActiveMasternode::Register - Donation Percentage Out Of Range\n");
+            return false;
+        }
+    }
+	if(nMnCount > 150 )
         {
             LogPrintf("ActiveMasternode::Register - The limit of 150 Masternodes has been reached on the EMC Blockchain\n");
             return false;
         }
-    }
-
 	return Register(vin, CService(strService, true), keyCollateralAddress, pubKeyCollateralAddress, keyMasternode, pubKeyMasternode, donationAddress, donationPercentage, errorMessage);
 }
 
@@ -273,6 +302,7 @@ bool CActiveMasternode::Register(CTxIn vin, CService service, CKey keyCollateral
     std::vector<unsigned char> vchMasterNodeSignature;
     std::string strMasterNodeSignMessage;
     int64_t masterNodeSignatureTime = GetAdjustedTime();
+	int nMnCount = mnodeman.CountEnabled();
 
     std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
     std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
@@ -299,6 +329,11 @@ bool CActiveMasternode::Register(CTxIn vin, CService service, CKey keyCollateral
         mn.UpdateLastSeen(masterNodeSignatureTime);
         mnodeman.Add(mn);
     }
+		if(nMnCount > 150 )
+        {
+            LogPrintf("ActiveMasternode::Register - The limit of 150 Masternodes has been reached on the EMC Blockchain\n");
+            return false;
+        }
 
     //send to all peers
     LogPrintf("CActiveMasternode::Register() - RelayElectionEntry vin = %s\n", vin.ToString().c_str());
@@ -404,7 +439,7 @@ bool CActiveMasternode::GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubke
 
 	CTxDestination address1;
     ExtractDestination(pubScript, address1);
-    CEmCoinAddress address2(address1);
+    CEMCAddress address2(address1);
 
     CKeyID keyID;
     if (!address2.GetKeyID(keyID)) {
@@ -443,7 +478,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 // get all possible outputs for running masternode for a specific pubkey
 vector<COutput> CActiveMasternode::SelectCoinsMasternodeForPubKey(std::string collateralAddress)
 {
-    CEmCoinAddress address(collateralAddress);
+    CEMCAddress address(collateralAddress);
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address.Get());
     vector<COutput> vCoins;

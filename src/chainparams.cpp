@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2014-2015 Dash Developers
-// Copyright (c) 2017-2018 The EmCoin developers
+// Copyright (c) 2017-2018 The EMC developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +55,7 @@ static void convertSeeds(std::vector<CAddress> &vSeedsOut, const unsigned int *d
 // Hardcoded seeds.
 static void getHardcodedSeeds(std::vector<CAddress> &vSeedsOut)
 {
-  std::vector<std::string> ips;
+    std::vector<std::string> ips;
     ips.push_back("206.189.71.184");
     ips.push_back("37.139.28.75");
     ips.push_back("138.68.4.151");
@@ -63,7 +63,7 @@ static void getHardcodedSeeds(std::vector<CAddress> &vSeedsOut)
     const int64_t oneWeek = 7 * 24 * 60 * 60;
     for (size_t i = 0; i < ips.size(); ++i)
     {
-        CAddress addr(CService(ips[i], 41507));
+        CAddress addr(CService(ips[i], 31507));
         addr.nTime = GetTime() - GetRand(oneWeek) - oneWeek;
         vSeedsOut.push_back(addr);
     }
@@ -80,11 +80,11 @@ public:
         pchMessageStart[2] = 0xdb;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("MHQCAQEEIPpijy/5b8N+O4Blg9DtpBHfIeHn8DecH9RKKBQx7hDSoAcGBSuBBAAKoUQDQgAE1y5S+Q2EcaTbs4vzgO2DOeB1Nb7nS0O1vki9yI3W4ecu7x6FwYLfqZMSWBz63gKPpnJQEWZQ+lIOY/ew4wXdRg==");
-        nDefaultPort = 41507;
-        nRPCPort = 41508;
+        nDefaultPort = 31507;
+        nRPCPort = 31508;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16); // starting difficulty is 1 / 2^12
 
-        const char* pszTimestamp = "Carlo Calucci - Exclusive Masternode Coin (EMC) 21-04-2018";
+        const char* pszTimestamp = "Carlo Calucci - Exclusive Masternode Coin (EMC) 27-04-2018";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -93,7 +93,7 @@ public:
         vout[0].SetEmpty();
 
 	// original 1516154401
-        CTransaction txNew(1, 1524319469, vin, vout, 0);
+        CTransaction txNew(1, 1524860309, vin, vout, 0);
 
         LogPrintf("genesis mainnet transaction:  %s\n", txNew.ToString().c_str());
 
@@ -102,7 +102,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1524319448; // 21-04-2018
+        genesis.nTime    = 1524860228; // 27-04-2018
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 415077;
 
@@ -156,8 +156,6 @@ static CMainParams mainParams;
 // Testnet
 //
 
-class CTestNetParams : public CMainParams {
-public:
     CTestNetParams() {
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -168,8 +166,8 @@ public:
         pchMessageStart[3] = 0xb8;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("MHQCAQEEIH3O67k5Ad2dOt+a6LuLZWLH4gzZ0+V2XVPhCb5Id1B/oAcGBSuBBAAKoUQDQgAEjtbe/+Vxtrpc0aTuDDyOP8S2Giw1tJPe5ZHFj9HYqM6MDkKa4LcOYN5Hxg5KhYV9QwDQ+mcOef4WkFvPZfnr0g==");
-        nDefaultPort = 12707;
-        nRPCPort = 12708;
+        nDefaultPort = 23707;
+        nRPCPort = 23708;
         strDataDir = "testnet";
         genesis.nTime    = 1520638730;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
@@ -221,6 +219,7 @@ void SelectParams(CChainParams::Network network) {
             return;
     }
 }
+
 
 bool SelectParamsFromCommandLine() {
 

@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EmCoin</source>
-        <translation>Despre EmCoin</translation>
+        <source>About EMC</source>
+        <translation>Despre EMC</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EmCoin&lt;/b&gt; version</source>
-        <translation>Versiune &lt;b&gt;EmCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;EMC&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;EMC&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</source>
+Copyright © 2014 The EMC developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</translation>
+Copyright © 2014 The EMC developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your EmCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele EmCoin pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your EMC addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele EMC pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a EmCoin address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă EmCoin</translation>
+        <source>Sign a message to prove you own a EMC address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă EMC</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified EmCoin address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă EmCoin</translation>
+        <source>Verify a message to ensure it was signed with a specified EMC address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă EMC</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>EmCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>EmCoin se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>EMC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>EMC se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about EmCoin</source>
-        <translation>Arată informații despre EmCoin</translation>
+        <source>Show information about EMC</source>
+        <translation>Arată informații despre EMC</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a EmCoin address</source>
-        <translation>Trimite monede către o adresă EmCoin</translation>
+        <source>Send coins to a EMC address</source>
+        <translation>Trimite monede către o adresă EMC</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for EmCoin</source>
-        <translation>Modifică opțiuni de configurare pentru EmCoin</translation>
+        <source>Modify configuration options for EMC</source>
+        <translation>Modifică opțiuni de configurare pentru EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>EmCoin</source>
-        <translation>EmCoin</translation>
+        <source>EMC</source>
+        <translation>EMC</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About EmCoin</source>
-        <translation>Despre EmCoin</translation>
+        <source>&amp;About EMC</source>
+        <translation>Despre EMC</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>EmCoin client</source>
-        <translation>Clientul EmCoin</translation>
+        <source>EMC client</source>
+        <translation>Clientul EMC</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to EmCoin network</source>
-        <translation><numerusform>%n conexiune activă la reteaua EmCoin</numerusform><numerusform>%n conexiuni active la reteaua EmCoin</numerusform><numerusform>%n conexiuni active la reteaua EmCoin</numerusform></translation>
+        <source>%n active connection(s) to EMC network</source>
+        <translation><numerusform>%n conexiune activă la reteaua EMC</numerusform><numerusform>%n conexiuni active la reteaua EMC</numerusform><numerusform>%n conexiuni active la reteaua EMC</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid EmCoin address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa EmCoin invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EMC address or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa EMC invalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. EmCoin can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. EmCoin nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. EMC can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. EMC nu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EmCoin address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă EmCoin validă</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EMC address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă EMC validă</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>EmCoin-Qt</source>
-        <translation>EmCoin-Qt</translation>
+        <source>EMC-Qt</source>
+        <translation>EMC-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EmCoin after logging in to the system.</source>
-        <translation>Pornește EmCoin imdiat după logarea în sistem</translation>
+        <source>Automatically start EMC after logging in to the system.</source>
+        <translation>Pornește EMC imdiat după logarea în sistem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EmCoin on system login</source>
-        <translation>$Pornește EmCoin la logarea în sistem</translation>
+        <source>&amp;Start EMC on system login</source>
+        <translation>$Pornește EMC la logarea în sistem</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EmCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul EmCoin pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the EMC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul EMC pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1174,8 +1174,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EmCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conecteaza la reteaua EmCoin prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
+        <source>Connect to the EMC network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conecteaza la reteaua EMC prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,8 +1249,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EmCoin.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea EmCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EMC.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea EMC.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1316,8 +1316,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EmCoin.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea EmCoin.</translation>
+        <source>This setting will take effect after restarting EMC.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea EMC.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua EmCoin după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua EMC după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1577,8 +1577,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EmCoin-Qt help message to get a list with possible EmCoin command-line options.</source>
-        <translation>Afișa mesajul de ajutor EmCoin-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă EmCoin.</translation>
+        <source>Show the EMC-Qt help message to get a list with possible EMC command-line options.</source>
+        <translation>Afișa mesajul de ajutor EMC-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă EMC.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1597,13 +1597,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>EmCoin - Debug window</source>
-        <translation>EmCoin - fereastră depanare</translation>
+        <source>EMC - Debug window</source>
+        <translation>EMC - fereastră depanare</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EmCoin Core</source>
-        <translation>EmCoin Core</translation>
+        <source>EMC Core</source>
+        <translation>EMC Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1612,8 +1612,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EmCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare EmCoin din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the EMC debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare EMC din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1622,8 +1622,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the EmCoin RPC console.</source>
-        <translation>Bine ati venit la consola EmCoin RPC.</translation>
+        <source>Welcome to the EMC RPC console.</source>
+        <translation>Bine ati venit la consola EMC RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1816,8 +1816,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă EmCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă EMC(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1916,8 +1916,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid EmCoin address</source>
-        <translation>Atenție: Adresă EmCoin invalidă</translation>
+        <source>WARNING: Invalid EMC address</source>
+        <translation>Atenție: Adresă EMC invalidă</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1990,8 +1990,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă EmCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă EMC(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2051,8 +2051,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EmCoin address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă EmCoin</translation>
+        <source>Sign the message to prove you own this EMC address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2083,8 +2083,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EmCoin address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă EmCoin</translation>
+        <source>Verify the message to ensure it was signed with the specified EMC address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2094,8 +2094,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă EmCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă EMC(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2104,8 +2104,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EmCoin signature</source>
-        <translation>Introduceti semnatura EmCoin</translation>
+        <source>Enter EMC signature</source>
+        <translation>Introduceti semnatura EMC</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2683,8 +2683,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>EmCoin version</source>
-        <translation>Versiune EmCoin</translation>
+        <source>EMC version</source>
+        <translation>Versiune EMC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2693,8 +2693,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or emcoind</source>
-        <translation>Trimite comanda catre server sau emcoind</translation>
+        <source>Send command to -server or emcd</source>
+        <translation>Trimite comanda catre server sau emcd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: emcoin.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: emcoin.conf)</translation>
+        <source>Specify configuration file (default: emc.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: emc.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: emcoind.pid)</source>
-        <translation>Speficica fisier pid(implicit: emcoin.pid)</translation>
+        <source>Specify pid file (default: emcd.pid)</source>
+        <translation>Speficica fisier pid(implicit: emc.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,13 +2736,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emcoinrpc
+rpcuser=emcrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EMC Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2848,8 +2848,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EmCoin will not work properly.</source>
-        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit EmCoin nu va functiona corect.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EMC will not work properly.</source>
+        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit EMC nu va functiona corect.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -2943,8 +2943,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+30"/>
-        <source>Set maximum block size in bytes (default: 225000)</source>
-        <translation>Setează mărimea maxima a blocului în bytes (implicit: 225000)</translation>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation>Setează mărimea maxima a blocului în bytes (implicit: 250000)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3155,7 +3155,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. EmCoin is shutting down.</source>
+        <source>Initialization sanity check failed. EMC is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3220,13 +3220,13 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EmCoin</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de EmCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EMC</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de EMC</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart EmCoin to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați EmCoin pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart EMC to complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați EMC pentru a finaliza</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3290,8 +3290,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. EmCoin is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil EmCoin ruleaza</translation>
+        <source>Unable to bind to %s on this computer. EMC is probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil EMC ruleaza</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3330,7 +3330,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EmCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EMC is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

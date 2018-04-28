@@ -202,7 +202,7 @@ public:
         contactLabel->setText(QString());
         newButton->setText(QApplication::translate("MessagePage", "&Conversation", 0));
 #ifndef QT_NO_TOOLTIP
-        sendButton->setToolTip(QApplication::translate("MessagePage", "Sign a message to prove you own a EmCoin address", 0));
+        sendButton->setToolTip(QApplication::translate("MessagePage", "Sign a message to prove you own a EMC address", 0));
 #endif // QT_NO_TOOLTIP
         sendButton->setText(QApplication::translate("MessagePage", "&Send", 0));
 #ifndef QT_NO_TOOLTIP

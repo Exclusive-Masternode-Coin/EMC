@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>EmCoin-Qt</string>
+	<string>EMC-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>EmCoin-Qt</string>
+	<string>EMC-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.emcoin.EmCoin-Qt</string>
+	<string>co.emc.EMC-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.emcoin.EmCoinPayment</string>
+            <string>co.emc.EMCPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>emcoin</string>
+              <string>emc</string>
             </array>
           </dict>
         </array>

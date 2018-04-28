@@ -60,7 +60,7 @@ public:
     {
         AdrenalineNodeConfigDialog->setWindowTitle(QApplication::translate("AdrenalineNodeConfigDialog", "Master Node Configuration Template", 0));
 #ifndef QT_NO_TOOLTIP
-        detailText->setToolTip(QApplication::translate("AdrenalineNodeConfigDialog", "<html><head/><body><p>This pane shows an example emcoin.conf template with the necessary masternode settings.</p></body></html>", 0));
+        detailText->setToolTip(QApplication::translate("AdrenalineNodeConfigDialog", "<html><head/><body><p>This pane shows an example emc.conf template with the necessary masternode settings.</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 

@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EmCoin</source>
-        <translation>Over EmCoin</translation>
+        <source>About EMC</source>
+        <translation>Over EMC</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EmCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;EmCoin&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;EMC&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;EMC&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</source>
+Copyright © 2014 The EMC developers</source>
         <translation>Copyright © 2009-2014 De Bitcoin ontwikkelaars
 Copyright © 2012-2014 De NovaCoin ontwikkelaars
-Copyright © 2014 De EmCoin ontwikkelaars</translation>
+Copyright © 2014 De EMC ontwikkelaars</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your EmCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn al jou EmCoin adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
+        <source>These are your EMC addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit zijn al jou EMC adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a EmCoin address</source>
-        <translation>Teken een bericht om te bewijzen dat je een EmCoin adres bezit.</translation>
+        <source>Sign a message to prove you own a EMC address</source>
+        <translation>Teken een bericht om te bewijzen dat je een EMC adres bezit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified EmCoin address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek EmCoin adres</translation>
+        <source>Verify a message to ensure it was signed with a specified EMC address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek EMC adres</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>EmCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>EmCoin zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
+        <source>EMC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>EMC zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about EmCoin</source>
-        <translation>Toon informatie over EmCoin</translation>
+        <source>Show information about EMC</source>
+        <translation>Toon informatie over EMC</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a EmCoin address</source>
-        <translation>Verstuur munten naar een EmCoin adres</translation>
+        <source>Send coins to a EMC address</source>
+        <translation>Verstuur munten naar een EMC adres</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for EmCoin</source>
-        <translation>Verander configuratie opties voor EmCoin</translation>
+        <source>Modify configuration options for EMC</source>
+        <translation>Verander configuratie opties voor EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>EmCoin</source>
-        <translation>EmCoin</translation>
+        <source>EMC</source>
+        <translation>EMC</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About EmCoin</source>
-        <translation>&amp;Over EmCoin</translation>
+        <source>&amp;About EMC</source>
+        <translation>&amp;Over EMC</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>EmCoin client</source>
-        <translation>EmCoin client</translation>
+        <source>EMC client</source>
+        <translation>EMC client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to EmCoin network</source>
-        <translation><numerusform>%n actieve verbinding naar EmCoin netwerk</numerusform><numerusform>%n actieve verbindingen naar EmCoin netwerk</numerusform></translation>
+        <source>%n active connection(s) to EMC network</source>
+        <translation><numerusform>%n actieve verbinding naar EMC netwerk</numerusform><numerusform>%n actieve verbindingen naar EMC netwerk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid EmCoin address or malformed URI parameters.</source>
-        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig EmCoin adres of incorrecte URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EMC address or malformed URI parameters.</source>
+        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig EMC adres of incorrecte URI parameters.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. EmCoin can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout . EmCoin kan niet langer veilig doorgaan en sluit af.</translation>
+        <source>A fatal error occurred. EMC can no longer continue safely and will quit.</source>
+        <translation>Een fatale fout . EMC kan niet langer veilig doorgaan en sluit af.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EmCoin address.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig EmCoin adres.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EMC address.</source>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig EMC adres.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>EmCoin-Qt</source>
-        <translation>EmCoin-Qt</translation>
+        <source>EMC-Qt</source>
+        <translation>EMC-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EmCoin after logging in to the system.</source>
-        <translation>Automatisch starten van EmCoin na inloggen van het systeem.</translation>
+        <source>Automatically start EMC after logging in to the system.</source>
+        <translation>Automatisch starten van EMC na inloggen van het systeem.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EmCoin on system login</source>
-        <translation>&amp;Start EmCoin bij systeem aanmelding</translation>
+        <source>&amp;Start EMC on system login</source>
+        <translation>&amp;Start EMC bij systeem aanmelding</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EmCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>De EmCoin client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
+        <source>Automatically open the EMC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>De EMC client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1174,8 +1174,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EmCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Verbinding maken met het EmCoin netwerk via een SOCKS proxy (bijvoorbeeld als U gebruik maakt van Tor)</translation>
+        <source>Connect to the EMC network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Verbinding maken met het EMC netwerk via een SOCKS proxy (bijvoorbeeld als U gebruik maakt van Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,8 +1249,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EmCoin.</source>
-        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na EmCoin opnieuw op te starten.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EMC.</source>
+        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na EMC opnieuw op te starten.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1316,8 +1316,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EmCoin.</source>
-        <translation>Deze instelling word toegepast na een restart van EmCoin.</translation>
+        <source>This setting will take effect after restarting EMC.</source>
+        <translation>Deze instelling word toegepast na een restart van EMC.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het EmCoin netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het EMC netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1577,8 +1577,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EmCoin-Qt help message to get a list with possible EmCoin command-line options.</source>
-        <translation>Laat het EmCoin-QT help bericht zien om een lijst te krijgen met mogelijke EmCoin command-regel opties.</translation>
+        <source>Show the EMC-Qt help message to get a list with possible EMC command-line options.</source>
+        <translation>Laat het EMC-QT help bericht zien om een lijst te krijgen met mogelijke EMC command-regel opties.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1597,13 +1597,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>EmCoin - Debug window</source>
-        <translation>EmCoin - Debugscherm</translation>
+        <source>EMC - Debug window</source>
+        <translation>EMC - Debugscherm</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EmCoin Core</source>
-        <translation>EmCoin Kern</translation>
+        <source>EMC Core</source>
+        <translation>EMC Kern</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1612,8 +1612,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EmCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het EmCoin debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
+        <source>Open the EMC debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het EMC debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1622,8 +1622,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the EmCoin RPC console.</source>
-        <translation>Welkom bij de EmCoin RPC console.</translation>
+        <source>Welcome to the EMC RPC console.</source>
+        <translation>Welkom bij de EMC RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1816,8 +1816,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een EmCoin adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een EMC adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1916,8 +1916,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid EmCoin address</source>
-        <translation>WAARSCHUWING: Ongeldig EmCoin adres</translation>
+        <source>WARNING: Invalid EMC address</source>
+        <translation>WAARSCHUWING: Ongeldig EMC adres</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1990,8 +1990,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een EmCoin adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een EMC adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2051,8 +2051,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EmCoin address</source>
-        <translation>Teken een bericht om te bewijzen dat je een EmCoin adres bezit.</translation>
+        <source>Sign the message to prove you own this EMC address</source>
+        <translation>Teken een bericht om te bewijzen dat je een EMC adres bezit.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2083,8 +2083,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EmCoin address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek EmCoin adres</translation>
+        <source>Verify the message to ensure it was signed with the specified EMC address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek EMC adres</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2094,8 +2094,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een EmCoin adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een EMC adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2104,8 +2104,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EmCoin signature</source>
-        <translation>Voer EmCoin handtekening in</translation>
+        <source>Enter EMC signature</source>
+        <translation>Voer EMC handtekening in</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2683,8 +2683,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+172"/>
-        <source>EmCoin version</source>
-        <translation>EmCoin versie</translation>
+        <source>EMC version</source>
+        <translation>EMC versie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2693,8 +2693,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or emcoind</source>
-        <translation>Verstuur commando naar -server of emcoind</translation>
+        <source>Send command to -server or emcd</source>
+        <translation>Verstuur commando naar -server of emcd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: emcoin.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: emcoin.conf)</translation>
+        <source>Specify configuration file (default: emc.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: emc.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: emcoind.pid)</source>
-        <translation>Selecteer pid bestand (standaard: emcoin.conf)</translation>
+        <source>Specify pid file (default: emcd.pid)</source>
+        <translation>Selecteer pid bestand (standaard: emc.conf)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,13 +2736,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emcoinrpc
+rpcuser=emcrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EMC Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2848,8 +2848,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="-102"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EmCoin will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is EmCoin zal niet goed werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EMC will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is EMC zal niet goed werken.</translation>
     </message>
     <message>
         <location line="+131"/>
@@ -2938,8 +2938,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+34"/>
-        <source>Set maximum block size in bytes (default: 225000)</source>
-        <translation>Stel maximale block grootte in bytes in (standaard: 225000)</translation>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation>Stel maximale block grootte in bytes in (standaard: 250000)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3150,7 +3150,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. EmCoin is shutting down.</source>
+        <source>Initialization sanity check failed. EMC is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3215,13 +3215,13 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EmCoin</source>
-        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van EmCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EMC</source>
+        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van EMC</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart EmCoin to complete</source>
-        <translation>Portemonnee moet herschreven worden: herstart EmCoin om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart EMC to complete</source>
+        <translation>Portemonnee moet herschreven worden: herstart EMC om te voltooien</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3285,8 +3285,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. EmCoin is probably already running.</source>
-        <translation>Niet mogelijk om %s op deze computer. EmCoin is waarschijnlijk al geopened.</translation>
+        <source>Unable to bind to %s on this computer. EMC is probably already running.</source>
+        <translation>Niet mogelijk om %s op deze computer. EMC is waarschijnlijk al geopened.</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3325,7 +3325,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EmCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EMC is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("EmCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("EMC version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  emcoind [options]                     " + "\n" +
-                  "  emcoind [options] <command> [params]  " + _("Send command to -server or emcoind") + "\n" +
-                  "  emcoind [options] help                " + _("List commands") + "\n" +
-                  "  emcoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  emcd [options]                     " + "\n" +
+                  "  emcd [options] <command> [params]  " + _("Send command to -server or emcd") + "\n" +
+                  "  emcd [options] help                " + _("List commands") + "\n" +
+                  "  emcd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "emcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "emc:"))
                 fCommandLine = true;
 
         if (fCommandLine)

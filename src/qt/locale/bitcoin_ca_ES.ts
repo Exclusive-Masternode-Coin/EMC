@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About EmCoin</source>
-        <translation>Sobre EmCoin</translation>
+        <source>About EMC</source>
+        <translation>Sobre EMC</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;EmCoin&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;EmCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;EMC&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;EMC&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</source>
+Copyright © 2014 The EMC developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The EmCoin developers</translation>
+Copyright © 2014 The EMC developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your EmCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de EmCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your EMC addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de EMC per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a EmCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça EmCoin</translation>
+        <source>Sign a message to prove you own a EMC address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça EMC</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified EmCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça EmCoin especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified EMC address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça EMC especificada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>EmCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>EmCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>EMC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>EMC tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about EmCoin</source>
-        <translation>Mostra informació sobre EmCoin</translation>
+        <source>Show information about EMC</source>
+        <translation>Mostra informació sobre EMC</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a EmCoin address</source>
-        <translation>Enviar monedes a una adreça EmCoin</translation>
+        <source>Send coins to a EMC address</source>
+        <translation>Enviar monedes a una adreça EMC</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for EmCoin</source>
-        <translation>Modificar les opcions de configuració per a EmCoin</translation>
+        <source>Modify configuration options for EMC</source>
+        <translation>Modificar les opcions de configuració per a EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>EmCoin</source>
-        <translation>EmCoin</translation>
+        <source>EMC</source>
+        <translation>EMC</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About EmCoin</source>
-        <translation>&amp;Sobre EmCoin</translation>
+        <source>&amp;About EMC</source>
+        <translation>&amp;Sobre EMC</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>EmCoin client</source>
-        <translation>Client EmCoin</translation>
+        <source>EMC client</source>
+        <translation>Client EMC</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to EmCoin network</source>
-        <translation><numerusform>%n conexió activa a la xarxa EmCoin</numerusform><numerusform>%n conexions actives a la xarxa EmCoin</numerusform></translation>
+        <source>%n active connection(s) to EMC network</source>
+        <translation><numerusform>%n conexió activa a la xarxa EMC</numerusform><numerusform>%n conexions actives a la xarxa EMC</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -596,8 +596,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid EmCoin address or malformed URI parameters.</source>
-        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça EmCoin no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EMC address or malformed URI parameters.</source>
+        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça EMC no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -719,8 +719,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. EmCoin can no longer continue safely and will quit.</source>
-        <translation>S&apos;ha produït un error fatal. EmCoin ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. EMC can no longer continue safely and will quit.</source>
+        <translation>S&apos;ha produït un error fatal. EMC ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid EmCoin address.</source>
-        <translation>La direcció introduïda &quot;%1&quot; no és una adreça EmCoin vàlida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EMC address.</source>
+        <translation>La direcció introduïda &quot;%1&quot; no és una adreça EMC vàlida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>EmCoin-Qt</source>
-        <translation>EmCoin-Qt</translation>
+        <source>EMC-Qt</source>
+        <translation>EMC-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start EmCoin after logging in to the system.</source>
-        <translation>Inicia automàticament EmCoin després d&apos;entrar en el sistema.</translation>
+        <source>Automatically start EMC after logging in to the system.</source>
+        <translation>Inicia automàticament EMC després d&apos;entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start EmCoin on system login</source>
-        <translation>&amp;Iniciar EmCoin amb l&apos;inici de sessió</translation>
+        <source>&amp;Start EMC on system login</source>
+        <translation>&amp;Iniciar EMC amb l&apos;inici de sessió</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1160,8 +1160,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the EmCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client EmCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the EMC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client EMC en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1170,8 +1170,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the EmCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecteu-vos a la xarxa EmCoin través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
+        <source>Connect to the EMC network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecteu-vos a la xarxa EMC través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1245,8 +1245,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting EmCoin.</source>
-        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar EmCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EMC.</source>
+        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar EMC.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1312,8 +1312,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting EmCoin.</source>
-        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar EmCoin.</translation>
+        <source>This setting will take effect after restarting EMC.</source>
+        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar EMC.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1331,8 +1331,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa EmCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa EMC després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1573,8 +1573,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the EmCoin-Qt help message to get a list with possible EmCoin command-line options.</source>
-        <translation>Mostra el missatge d&apos;ajuda de EmCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres EmCoin.</translation>
+        <source>Show the EMC-Qt help message to get a list with possible EMC command-line options.</source>
+        <translation>Mostra el missatge d&apos;ajuda de EMC-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres EMC.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1593,13 +1593,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>EmCoin - Debug window</source>
-        <translation>EmCoin - Finestra Depuració</translation>
+        <source>EMC - Debug window</source>
+        <translation>EMC - Finestra Depuració</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>EmCoin Core</source>
-        <translation>Nucli EmCoin</translation>
+        <source>EMC Core</source>
+        <translation>Nucli EMC</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1608,8 +1608,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the EmCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració EmCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the EMC debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració EMC des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1618,8 +1618,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the EmCoin RPC console.</source>
-        <translation>Benvingut a la consola RPC de EmCoin.</translation>
+        <source>Welcome to the EMC RPC console.</source>
+        <translation>Benvingut a la consola RPC de EMC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1812,8 +1812,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça EmCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça EMC (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1912,8 +1912,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid EmCoin address</source>
-        <translation>ADVERTÈNCIA: Direcció EmCoin invàlida</translation>
+        <source>WARNING: Invalid EMC address</source>
+        <translation>ADVERTÈNCIA: Direcció EMC invàlida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1986,8 +1986,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça EmCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça EMC (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2047,8 +2047,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this EmCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça EmCoin</translation>
+        <source>Sign the message to prove you own this EMC address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça EMC</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2079,8 +2079,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified EmCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça EmCoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified EMC address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça EMC especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2090,8 +2090,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EmCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça EmCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EMC address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça EMC (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2100,8 +2100,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter EmCoin signature</source>
-        <translation>Introduïu la signatura EmCoin</translation>
+        <source>Enter EMC signature</source>
+        <translation>Introduïu la signatura EMC</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2679,8 +2679,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>EmCoin version</source>
-        <translation>versió EmCoin</translation>
+        <source>EMC version</source>
+        <translation>versió EMC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2689,8 +2689,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or emcoind</source>
-        <translation>Enviar comandes a -server o emcoind</translation>
+        <source>Send command to -server or emcd</source>
+        <translation>Enviar comandes a -server o emcd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2709,13 +2709,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: emcoin.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: emcoin.conf)</translation>
+        <source>Specify configuration file (default: emc.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: emc.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: emcoind.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: emcoind.pid)</translation>
+        <source>Specify pid file (default: emcd.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: emcd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2732,13 +2732,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emcoinrpc
+rpcuser=emcrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EMC Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2844,8 +2844,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EmCoin will not work properly.</source>
-        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni EmCoin no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EMC will not work properly.</source>
+        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni EMC no funcionarà correctament.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -2939,8 +2939,8 @@ for example: alertnotify=echo %%s | mail -s &quot;EmCoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+30"/>
-        <source>Set maximum block size in bytes (default: 225000)</source>
-        <translation>Establir una mida máxima de bloc en bytes (per defecte: 225000)</translation>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation>Establir una mida máxima de bloc en bytes (per defecte: 250000)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3152,7 +3152,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. EmCoin is shutting down.</source>
+        <source>Initialization sanity check failed. EMC is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3217,13 +3217,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of EmCoin</source>
-        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de EmCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EMC</source>
+        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de EMC</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart EmCoin to complete</source>
-        <translation>El moneder necessita ser reescrita: reiniciar EmCoin per completar</translation>
+        <source>Wallet needed to be rewritten: restart EMC to complete</source>
+        <translation>El moneder necessita ser reescrita: reiniciar EMC per completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3287,8 +3287,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. EmCoin is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. EmCoin probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. EMC is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. EMC probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3327,7 +3327,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. EmCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EMC is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

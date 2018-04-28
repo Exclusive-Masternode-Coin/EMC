@@ -134,7 +134,7 @@ void MultisigDialog::on_createAddressButton_clicked()
     {
         MultisigAddressEntry *entry = qobject_cast<MultisigAddressEntry *>(ui->pubkeyEntries->itemAt(i)->widget());
         std::string strAddressEntered = entry->getPubkey().toUtf8().constData();
-        CEmCoinAddress address(strAddressEntered);
+        CEMCAddress address(strAddressEntered);
         if(pwalletMain && address.IsValid())
         {
             bool fError = false;
@@ -171,7 +171,7 @@ void MultisigDialog::on_createAddressButton_clicked()
 
     CScript script = GetScriptForMultisig(required, pubkeys);
     CScriptID scriptID = script.GetID();
-    CEmCoinAddress address(scriptID);
+    CEMCAddress address(scriptID);
     std::string label("multisig");
 
     LOCK(pwalletMain->cs_wallet);
@@ -257,7 +257,7 @@ void MultisigDialog::on_createTransactionButton_clicked()
             if(entry->validate())
             {
                 SendCoinsRecipient recipient = entry->getValue();
-                CEmCoinAddress address(recipient.address.toStdString());
+                CEMCAddress address(recipient.address.toStdString());
                 CScript scriptPubKey;
                 scriptPubKey.SetDestination(address.Get());
                 CAmount amount = recipient.amount;
@@ -321,7 +321,7 @@ void MultisigDialog::on_transaction_textChanged()
         CScript scriptPubKey = txout.scriptPubKey;
         CTxDestination addr;
         ExtractDestination(scriptPubKey, addr);
-        CEmCoinAddress address(addr);
+        CEMCAddress address(addr);
         SendCoinsRecipient recipient;
         recipient.address = QString(address.ToString().c_str());
         recipient.amount = txout.nValue;

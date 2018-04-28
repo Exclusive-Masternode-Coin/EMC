@@ -105,7 +105,7 @@ CScript _createmultisig(const Array& params)
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
         // Case 1: Bitcoin address and we have full public key:
-        CEmCoinAddress address(ks);
+        CEMCAddress address(ks);
         if (pwalletMain && address.IsValid())
         {
             CKeyID keyID;
@@ -175,7 +175,7 @@ Value createmultisig(const Array& params, bool fHelp)
     // Construct using pay-to-script-hash:
     CScript inner = _createmultisig(params);
     CScriptID innerID = inner.GetID();
-    CEmCoinAddress address(innerID);
+    CEMCAddress address(innerID);
 
     Object result;
     result.push_back(Pair("address", address.ToString()));
@@ -216,13 +216,13 @@ Value getnewaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewaddress ( \"account\" )\n"
-            "\nReturns a new EmCoin address for receiving payments.\n"
+            "\nReturns a new EMC address for receiving payments.\n"
             "If 'account' is specified (recommended), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
             "\nArguments:\n"
             "1. \"account\"        (string, optional) The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
             "\nResult:\n"
-            "\"emcoinaddress\"    (string) The new EmCoin address\n"
+            "\"emcaddress\"    (string) The new EMC address\n"
             "\nExamples:\n"
             + HelpExampleCli("getnewaddress", "")
             + HelpExampleCli("getnewaddress", "\"\"")
@@ -246,11 +246,11 @@ Value getnewaddress(const Array& params, bool fHelp)
 
     pwalletMain->SetAddressBookName(keyID, strAccount);
 
-    return CEmCoinAddress(keyID).ToString();
+    return CEMCAddress(keyID).ToString();
 }
 
 
-CEmCoinAddress GetAccountAddress(string strAccount, bool bForceNew=false)
+CEMCAddress GetAccountAddress(string strAccount, bool bForceNew=false)
 {
     CWalletDB walletdb(pwalletMain->strWalletFile);
 
@@ -285,7 +285,7 @@ CEmCoinAddress GetAccountAddress(string strAccount, bool bForceNew=false)
         walletdb.WriteAccount(strAccount, account);
     }
 
-    return CEmCoinAddress(account.vchPubKey.GetID());
+    return CEMCAddress(account.vchPubKey.GetID());
 }
 
 Value getaccountaddress(const Array& params, bool fHelp)
@@ -293,11 +293,11 @@ Value getaccountaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress \"account\"\n"
-            "\nReturns the current EmCoin address for receiving payments to this account.\n"
+            "\nReturns the current EMC address for receiving payments to this account.\n"
             "\nArguments:\n"
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
             "\nResult:\n"
-            "\"emcoinaddress\"   (string) The account EmCoin address\n"
+            "\"emcaddress\"   (string) The account EMC address\n"
             "\nExamples:\n"
             + HelpExampleCli("getaccountaddress", "")
             + HelpExampleCli("getaccountaddress", "\"\"")
@@ -321,19 +321,19 @@ Value setaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount \"emcoinaddress\" \"account\"\n"
+            "setaccount \"emcaddress\" \"account\"\n"
             "\nSets the account associated with the given address.\n"
             "\nArguments:\n"
-            "1. \"emcoinaddress\"  (string, required) The EmCoin address to be associated with an account.\n"
+            "1. \"emcaddress\"  (string, required) The EMC address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
             "\nExamples:\n"
-            + HelpExampleCli("setaccount", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" \"tabby\"")
-            + HelpExampleRpc("setaccount", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\", \"tabby\"")
+            + HelpExampleCli("setaccount", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" \"tabby\"")
+            + HelpExampleRpc("setaccount", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\", \"tabby\"")
         );
 
-    CEmCoinAddress address(params[0].get_str());
+    CEMCAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EmCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EMC address");
 
 
     string strAccount;
@@ -363,20 +363,20 @@ Value getaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount \"emcoinaddress\"\n"
+            "getaccount \"emcaddress\"\n"
             "\nReturns the account associated with the given address.\n"
             "\nArguments:\n"
-            "1. \"emcoinaddress\"  (string, required) The EmCoin address for account lookup.\n"
+            "1. \"emcaddress\"  (string, required) The EMC address for account lookup.\n"
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
             "\nExamples:\n"
-            + HelpExampleCli("getaccount", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\"")
-            + HelpExampleRpc("getaccount", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\"")
+            + HelpExampleCli("getaccount", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\"")
+            + HelpExampleRpc("getaccount", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\"")
         );
 
-    CEmCoinAddress address(params[0].get_str());
+    CEMCAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EmCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EMC address");
 
     string strAccount;
     map<CTxDestination, string>::iterator mi = pwalletMain->mapAddressBook.find(address.Get());
@@ -396,7 +396,7 @@ Value getaddressesbyaccount(const Array& params, bool fHelp)
             "1. \"account\"  (string, required) The account name.\n"
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"emcoinaddress\"  (string) a EmCoin address associated with the given account\n"
+            "  \"emcaddress\"  (string) a EMC address associated with the given account\n"
             "  ,...\n"
             "]\n"
             "\nExamples:\n"
@@ -408,9 +408,9 @@ Value getaddressesbyaccount(const Array& params, bool fHelp)
 
     // Find all addresses that have the given account
     Array ret;
-    BOOST_FOREACH(const PAIRTYPE(CEmCoinAddress, string)& item, pwalletMain->mapAddressBook)
+    BOOST_FOREACH(const PAIRTYPE(CEMCAddress, string)& item, pwalletMain->mapAddressBook)
     {
-        const CEmCoinAddress& address = item.first;
+        const CEMCAddress& address = item.first;
         const string& strName = item.second;
         if (strName == strAccount)
             ret.push_back(address.ToString());
@@ -422,11 +422,11 @@ Value sendtoaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress \"emcoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"emcaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSent an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n"
             + HelpRequiringPassphrase() +
             "\nArguments:\n"
-           "1. \"emcoinaddress\"  (string, required) The EmCoin address to send to.\n"
+           "1. \"emcaddress\"  (string, required) The EMC address to send to.\n"
             "2. \"amount\"      (numeric, required) The amount inEMCto send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
@@ -436,9 +436,9 @@ Value sendtoaddress(const Array& params, bool fHelp)
             "\nResult:\n"
             "\"transactionid\"  (string) The transaction id.\n"
             "\nExamples:\n"
-            + HelpExampleCli("sendtoaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 0.1")
-            + HelpExampleCli("sendtoaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 0.1 \"donation\" \"seans outpost\"")
-            + HelpExampleRpc("sendtoaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\", 0.1, \"donation\", \"seans outpost\"")
+            + HelpExampleCli("sendtoaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 0.1")
+            + HelpExampleCli("sendtoaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 0.1 \"donation\" \"seans outpost\"")
+            + HelpExampleRpc("sendtoaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\", 0.1, \"donation\", \"seans outpost\"")
         );
 
     EnsureWalletIsUnlocked();
@@ -447,9 +447,9 @@ Value sendtoaddress(const Array& params, bool fHelp)
         && IsStealthAddress(params[0].get_str()))
         return sendtostealthaddress(params, false);
 
-    CEmCoinAddress address(params[0].get_str());
+    CEMCAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EmCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EMC address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -487,7 +487,7 @@ Value listaddressgroupings(const Array& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"emcoinaddress\",     (string) The EmCoin address\n"
+            "      \"emcaddress\",     (string) The EMC address\n"
             "      amount,                 (numeric) The amount in btc\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
@@ -508,12 +508,12 @@ Value listaddressgroupings(const Array& params, bool fHelp)
         BOOST_FOREACH(CTxDestination address, grouping)
         {
             Array addressInfo;
-            addressInfo.push_back(CEmCoinAddress(address).ToString());
+            addressInfo.push_back(CEMCAddress(address).ToString());
             addressInfo.push_back(ValueFromAmount(balances[address]));
             {
                 LOCK(pwalletMain->cs_wallet);
-                if (pwalletMain->mapAddressBook.find(CEmCoinAddress(address).Get()) != pwalletMain->mapAddressBook.end())
-                    addressInfo.push_back(pwalletMain->mapAddressBook.find(CEmCoinAddress(address).Get())->second);
+                if (pwalletMain->mapAddressBook.find(CEMCAddress(address).Get()) != pwalletMain->mapAddressBook.end())
+                    addressInfo.push_back(pwalletMain->mapAddressBook.find(CEMCAddress(address).Get())->second);
             }
             jsonGrouping.push_back(addressInfo);
         }
@@ -526,11 +526,11 @@ Value signmessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage \"emcoinaddress\" \"message\"\n"
+            "signmessage \"emcaddress\" \"message\"\n"
             "\nSign a message with the private key of an address"
             + HelpRequiringPassphrase() + "\n"
             "\nArguments:\n"
-            "1. \"emcoinaddress\"  (string, required) The EmCoin address to use for the private key.\n"
+            "1. \"emcaddress\"  (string, required) The EMC address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
             "\nResult:\n"
             "\"signature\"          (string) The signature of the message encoded in base 64\n"
@@ -538,11 +538,11 @@ Value signmessage(const Array& params, bool fHelp)
             "\nUnlock the wallet for 30 seconds\n"
             + HelpExampleCli("walletpassphrase", "\"mypassphrase\" 30") +
             "\nCreate the signature\n"
-            + HelpExampleCli("signmessage", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" \"my message\"") +
+            + HelpExampleCli("signmessage", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" \"my message\"") +
             "\nVerify the signature\n"
-            + HelpExampleCli("verifymessage", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" \"signature\" \"my message\"") +
+            + HelpExampleCli("verifymessage", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" \"signature\" \"my message\"") +
             "\nAs json rpc\n"
-            + HelpExampleRpc("signmessage", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\", \"my message\"")
+            + HelpExampleRpc("signmessage", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\", \"my message\"")
         );
 
     EnsureWalletIsUnlocked();
@@ -550,7 +550,7 @@ Value signmessage(const Array& params, bool fHelp)
     string strAddress = params[0].get_str();
     string strMessage = params[1].get_str();
 
-    CEmCoinAddress addr(strAddress);
+    CEMCAddress addr(strAddress);
     if (!addr.IsValid())
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid address");
 
@@ -577,29 +577,29 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress \"emcoinaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given emcoinaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"emcaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given emcaddress in transactions with at least minconf confirmations.\n"
             "\nArguments:\n"
-            "1. \"emcoinaddress\"  (string, required) The EmCoin address for transactions.\n"
+            "1. \"emcaddress\"  (string, required) The EMC address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
             "\nResult:\n"
             "amount   (numeric) The total amount inEMCreceived at this address.\n"
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\"") +
+            + HelpExampleCli("getreceivedbyaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\"") +
             "\nThe amount including unconfirmed transactions, zero confirmations\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 0") +
+            + HelpExampleCli("getreceivedbyaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 0") +
             "\nThe amount with at least 10 confirmation, very safe\n"
-            + HelpExampleCli("getreceivedbyaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 10") +
+            + HelpExampleCli("getreceivedbyaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 10") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("getreceivedbyaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\", 10")
+            + HelpExampleRpc("getreceivedbyaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\", 10")
        );
 
     // Bitcoin address
-    CEmCoinAddress address = CEmCoinAddress(params[0].get_str());
+    CEMCAddress address = CEMCAddress(params[0].get_str());
     CScript scriptPubKey;
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EmCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EMC address");
     scriptPubKey.SetDestination(address.Get());
     if (!IsMine(*pwalletMain,scriptPubKey))
         return (double)0.0;
@@ -874,13 +874,13 @@ Value sendfrom(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 7)
         throw runtime_error(
-            "sendfrom \"fromaccount\" \"toemcoinaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
-            "\nSent an amount from an account to a EmCoin address.\n"
+            "sendfrom \"fromaccount\" \"toemcaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
+            "\nSent an amount from an account to a EMC address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001."
             + HelpRequiringPassphrase() + "\n"
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"toemcoinaddress\"  (string, required) The EmCoin address to send funds to.\n"
+            "2. \"toemcaddress\"  (string, required) The EMC address to send funds to.\n"
             "3. amount                (numeric, required) The amount in EMC. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
@@ -892,19 +892,19 @@ Value sendfrom(const Array& params, bool fHelp)
             "\"transactionid\"        (string) The transaction id.\n"
             "\nExamples:\n"
             "\nSend 0.01EMCfrom the default account to the address, must have at least 1 confirmation\n"
-            + HelpExampleCli("sendfrom", "\"\" \"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 0.01") +
+            + HelpExampleCli("sendfrom", "\"\" \"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 10 confirmations\n"
-            + HelpExampleCli("sendfrom", "\"tabby\" \"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 0.01 10 \"donation\" \"seans outpost\"") +
+            + HelpExampleCli("sendfrom", "\"tabby\" \"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 0.01 10 \"donation\" \"seans outpost\"") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("sendfrom", "\"tabby\", \"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\", 0.01, 10, \"donation\", \"seans outpost\"")
+            + HelpExampleRpc("sendfrom", "\"tabby\", \"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\", 0.01, 10, \"donation\", \"seans outpost\"")
         );
 
     EnsureWalletIsUnlocked();
 
     string strAccount = AccountFromValue(params[0]);
-    CEmCoinAddress address(params[1].get_str());
+    CEMCAddress address(params[1].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EmCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EMC address");
     CAmount nAmount = AmountFromValue(params[2]);
 
     int nMinDepth = 1;
@@ -951,7 +951,7 @@ Value sendmany(const Array& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The EmCoin address is the key, the numeric amount inEMCis the value\n"
+            "      \"address\":amount   (numeric) The EMC address is the key, the numeric amount inEMCis the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -961,11 +961,11 @@ Value sendmany(const Array& params, bool fHelp)
             "                                    the number of addresses.\n"
             "\nExamples:\n"
             "\nSend two amounts to two different addresses:\n"
-            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\"") +
+            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\"") +
             "\nSend two amounts to two different addresses setting the confirmation and comment:\n"
-            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\" 10 \"testing\"") +
+            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\" 10 \"testing\"") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("sendmany", "\"tabby\", \"{\\\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\", 10, \"testing\"")
+            + HelpExampleRpc("sendmany", "\"tabby\", \"{\\\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\\\":0.01,\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\":0.02}\", 10, \"testing\"")
         );
 
     string strAccount = AccountFromValue(params[0]);
@@ -979,15 +979,15 @@ Value sendmany(const Array& params, bool fHelp)
     if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
         wtx.mapValue["comment"] = params[3].get_str();
 
-    set<CEmCoinAddress> setAddress;
+    set<CEMCAddress> setAddress;
     vector<pair<CScript, int64_t> > vecSend;
 
     int64_t totalAmount = 0;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
-        CEmCoinAddress address(s.name_);
+        CEMCAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid EmCoin address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid EMC address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -1036,26 +1036,26 @@ Value addmultisigaddress(const Array& params, bool fHelp)
     {
         string msg = "addmultisigaddress nrequired [\"key\",...] ( \"account\" )\n"
             "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-            "Each key is a EmCoin address or hex-encoded public key.\n"
+            "Each key is a EMC address or hex-encoded public key.\n"
             "If 'account' is specified, assign address to that account.\n"
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of EmCoin addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of EMC addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) EmCoin address or hex-encoded public key\n"
+            "       \"address\"  (string) EMC address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"account\"      (string, optional) An account to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"emcoinaddress\"  (string) A EmCoin address associated with the keys.\n"
+            "\"emcaddress\"  (string) A EMC address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n"
-            + HelpExampleCli("addmultisigaddress", "2 \"[\\\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\\\",\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\"]\"") +
+            + HelpExampleCli("addmultisigaddress", "2 \"[\\\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\\\",\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\"]\"") +
             "\nAs json rpc call\n"
-            + HelpExampleRpc("addmultisigaddress", "2, \"[\\\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\\\",\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\"]\"")
+            + HelpExampleRpc("addmultisigaddress", "2, \"[\\\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\\\",\\\"MqXy5e1QhqYgUqXn8mWqhn1dogj2caf7hb\\\"]\"")
         ;
         throw runtime_error(msg);
     }
@@ -1080,7 +1080,7 @@ Value addmultisigaddress(const Array& params, bool fHelp)
         const std::string& ks = keys[i].get_str();
 
         // Case 1: Bitcoin address and we have full public key:
-        CEmCoinAddress address(ks);
+        CEMCAddress address(ks);
         if (pwalletMain && address.IsValid())
         {
             CKeyID keyID;
@@ -1118,7 +1118,7 @@ Value addmultisigaddress(const Array& params, bool fHelp)
         throw runtime_error("AddCScript() failed");
 
     pwalletMain->SetAddressBookName(innerID, strAccount);
-    return CEmCoinAddress(innerID).ToString();
+    return CEMCAddress(innerID).ToString();
 }
 
 Value addredeemscript(const Array& params, bool fHelp)
@@ -1143,7 +1143,7 @@ Value addredeemscript(const Array& params, bool fHelp)
         throw runtime_error("AddCScript() failed");
 
     pwalletMain->SetAddressBookName(innerID, strAccount);
-    return CEmCoinAddress(innerID).ToString();
+    return CEMCAddress(innerID).ToString();
 }
 
 struct tallyitem
@@ -1180,7 +1180,7 @@ Value ListReceived(const Array& params, bool fByAccounts)
             filter = filter | ISMINE_WATCH_ONLY;
 
     // Tally
-    map<CEmCoinAddress, tallyitem> mapTally;
+    map<CEMCAddress, tallyitem> mapTally;
     for (map<uint256, CWalletTx>::iterator it = pwalletMain->mapWallet.begin(); it != pwalletMain->mapWallet.end(); ++it)
     {
         const CWalletTx& wtx = (*it).second;
@@ -1216,11 +1216,11 @@ Value ListReceived(const Array& params, bool fByAccounts)
     // Reply
     Array ret;
     map<string, tallyitem> mapAccountTally;
-    BOOST_FOREACH(const PAIRTYPE(CEmCoinAddress, string)& item, pwalletMain->mapAddressBook)
+    BOOST_FOREACH(const PAIRTYPE(CEMCAddress, string)& item, pwalletMain->mapAddressBook)
     {
-        const CEmCoinAddress& address = item.first;
+        const CEMCAddress& address = item.first;
         const string& strAccount = item.second;
-        map<CEmCoinAddress, tallyitem>::iterator it = mapTally.find(address);
+        map<CEMCAddress, tallyitem>::iterator it = mapTally.find(address);
         if (it == mapTally.end() && !fIncludeEmpty)
             continue;
 
@@ -1357,7 +1357,7 @@ Value listreceivedbyaccount(const Array& params, bool fHelp)
 
 static void MaybePushAddress(Object & entry, const CTxDestination &dest)
 {
-    CEmCoinAddress addr;
+    CEMCAddress addr;
     if (addr.Set(dest))
         entry.push_back(Pair("address", addr.ToString()));
 }
@@ -1475,7 +1475,7 @@ Value listtransactions(const Array& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"emcoinaddress\",    (string) The EmCoin address of the transaction. Not present for \n"
+            "    \"address\":\"emcaddress\",    (string) The EMC address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
@@ -1660,7 +1660,7 @@ Value listsinceblock(const Array& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"emcoinaddress\",    (string) The EmCoin address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"emcaddress\",    (string) The EMC address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
             "    \"amount\": x.xxx,          (numeric) The amount in EMC. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
@@ -1768,7 +1768,7 @@ Value gettransaction(const Array& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"emcoinaddress\",   (string) The EmCoin address involved in the transaction\n"
+            "      \"address\" : \"emcaddress\",   (string) The EMC address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
             "      \"amount\" : x.xxx                  (numeric) The amount in btc\n"
             "    }\n"
@@ -2030,7 +2030,7 @@ Value walletlock(const Array& params, bool fHelp)
             "\nSet the passphrase for 2 minutes to perform a transaction\n"
             + HelpExampleCli("walletpassphrase", "\"my pass phrase\" 120") +
             "\nPerform a send (requires passphrase set)\n"
-            + HelpExampleCli("sendtoaddress", "\"hFoQDUrp63QWqFhjEr3Fmc4ubHRhyzjKUC\" 1.0") +
+            + HelpExampleCli("sendtoaddress", "\"ENN69NtAnZrsnUUwWbrjPhuPm4JSmrxnNb\" 1.0") +
             "\nClear the passphrase since we are done before 2 minutes is up\n"
             + HelpExampleCli("walletlock", "") +
             "\nAs json rpc call\n"
@@ -2068,10 +2068,10 @@ Value encryptwallet(const Array& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n"
             + HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending EmCoin\n"
+            "\nNow set the passphrase to use the wallet, such as for signing or sending EMC\n"
             + HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n"
-            + HelpExampleCli("signmessage", "\"emcoinaddress\" \"test message\"") +
+            + HelpExampleCli("signmessage", "\"emcaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n"
             + HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n"
@@ -2101,7 +2101,7 @@ Value encryptwallet(const Array& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; EmCoin server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; EMC server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 
@@ -2253,7 +2253,7 @@ Value getnewstealthaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewstealthaddress [label]\n"
-            "Returns a new EmCoin stealth address for receiving payments anonymously.  ");
+            "Returns a new EMC stealth address for receiving payments anonymously.  ");
 
     if (pwalletMain->IsLocked())
         throw runtime_error("Failed: Wallet must be unlocked.");
@@ -2459,7 +2459,7 @@ Value sendtostealthaddress(const Array& params, bool fHelp)
 
     if (!sxAddr.SetEncoded(sEncoded))
     {
-        result.push_back(Pair("result", "Invalid EmCoin stealth address."));
+        result.push_back(Pair("result", "Invalid EMC stealth address."));
         return result;
     };
 

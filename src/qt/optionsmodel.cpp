@@ -66,13 +66,13 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    if (!settings.contains("nAnonymizeEmCoinAmount"))
-        settings.setValue("nAnonymizeEmCoinAmount", 1000);
-    nAnonymizeEmCoinAmount = settings.value("nAnonymizeEmCoinAmount").toLongLong();
+    if (!settings.contains("nAnonymizeEMCAmount"))
+        settings.setValue("nAnonymizeEMCAmount", 1000);
+    nAnonymizeEMCAmount = settings.value("nAnonymizeEMCAmount").toLongLong();
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeEmCoinAmount"))
-        SoftSetArg("-anonymizeemcoinamount", settings.value("nAnonymizeEmCoinAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeEMCAmount"))
+        SoftSetArg("-anonymizeemcamount", settings.value("nAnonymizeEMCAmount").toString().toStdString());
 
 
 
@@ -206,8 +206,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return fCoinControlFeatures;
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeEmCoinAmount:
-            return QVariant(nAnonymizeEmCoinAmount);
+        case AnonymizeEMCAmount:
+            return QVariant(nAnonymizeEMCAmount);
         case UseBlackTheme:
             return QVariant(fUseBlackTheme);
         default:
@@ -318,10 +318,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit darksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeEmCoinAmount:
-            nAnonymizeEmCoinAmount = value.toInt();
-            settings.setValue("nAnonymizeEmCoinAmount", nAnonymizeEmCoinAmount);
-            emit AnonymizeEmCoinAmountChanged(nAnonymizeEmCoinAmount);
+        case AnonymizeEMCAmount:
+            nAnonymizeEMCAmount = value.toInt();
+            settings.setValue("nAnonymizeEMCAmount", nAnonymizeEMCAmount);
+            emit AnonymizeEMCAmountChanged(nAnonymizeEMCAmount);
             break;
         default:
             break;

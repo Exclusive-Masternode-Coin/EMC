@@ -246,7 +246,7 @@ esac
 case $basic_machine in
 	# Recognize the basic CPU types without company name.
 	# Some are omitted here because they have special meanings below.
-	2250a | 580 \
+	1750a | 580 \
 	| a29k \
 	| aarch64 | aarch64_be \
 	| alpha | alphaev[4-8] | alphaev56 | alphaev6[78] | alphapca5[67] \

@@ -37,14 +37,14 @@ QT_MOC_LITERAL(4, 38, 21), // "transactionFeeChanged"
 QT_MOC_LITERAL(5, 60, 21), // "reserveBalanceChanged"
 QT_MOC_LITERAL(6, 82, 26), // "coinControlFeaturesChanged"
 QT_MOC_LITERAL(7, 109, 21), // "darksendRoundsChanged"
-QT_MOC_LITERAL(8, 131, 29) // "AnonymizeEmCoinAmountChanged"
+QT_MOC_LITERAL(8, 131, 29) // "AnonymizeEMCAmountChanged"
 
     },
     "OptionsModel\0displayUnitChanged\0\0unit\0"
     "transactionFeeChanged\0reserveBalanceChanged\0"
     "coinControlFeaturesChanged\0"
     "darksendRoundsChanged\0"
-    "AnonymizeEmCoinAmountChanged"
+    "AnonymizeEMCAmountChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -91,7 +91,7 @@ void OptionsModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 2: _t->reserveBalanceChanged((*reinterpret_cast< qint64(*)>(_a[1]))); break;
         case 3: _t->coinControlFeaturesChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 4: _t->darksendRoundsChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->AnonymizeEmCoinAmountChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 5: _t->AnonymizeEMCAmountChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -129,7 +129,7 @@ void OptionsModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         }
         {
             typedef void (OptionsModel::*_t)(int );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&OptionsModel::AnonymizeEmCoinAmountChanged)) {
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&OptionsModel::AnonymizeEMCAmountChanged)) {
                 *result = 5;
             }
         }
@@ -208,7 +208,7 @@ void OptionsModel::darksendRoundsChanged(int _t1)
 }
 
 // SIGNAL 5
-void OptionsModel::AnonymizeEmCoinAmountChanged(int _t1)
+void OptionsModel::AnonymizeEMCAmountChanged(int _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);

@@ -600,7 +600,7 @@ public:
         OverviewPage->setWindowTitle(QApplication::translate("OverviewPage", "Form", 0));
         label_5->setText(QApplication::translate("OverviewPage", "Balances", 0));
 #ifndef QT_NO_TOOLTIP
-        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.", 0));
+        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
         labelWatchPending->setToolTip(QApplication::translate("OverviewPage", "Unconfirmed transactions to watch-only addresses", 0));
@@ -641,7 +641,7 @@ public:
         labelSpendable->setText(QApplication::translate("OverviewPage", "Spendable:", 0));
         label_2->setText(QApplication::translate("OverviewPage", "Darksend", 0));
 #ifndef QT_NO_TOOLTIP
-        labelDarksendSyncStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.", 0));
+        labelDarksendSyncStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.", 0));
 #endif // QT_NO_TOOLTIP
         runAutoDenom->setText(QString());
         label_6->setText(QApplication::translate("OverviewPage", "Status:", 0));
@@ -667,7 +667,7 @@ public:
         darksendReset->setText(QApplication::translate("OverviewPage", "Reset", 0));
         label_4->setText(QApplication::translate("OverviewPage", "Recent transactions", 0));
 #ifndef QT_NO_TOOLTIP
-        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EmCoin network after a connection is established, but this process has not completed yet.", 0));
+        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the EMC network after a connection is established, but this process has not completed yet.", 0));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 

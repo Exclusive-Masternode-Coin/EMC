@@ -52,9 +52,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("EmCoins");
-    case mBTC: return QString("Milli-EmCoins (1 / 1,000)");
-    case uBTC: return QString("Micro-EmCoins (1 / 1,000,000)");
+    case BTC: return QString("EMCs");
+    case mBTC: return QString("Milli-EMCs (1 / 1,000)");
+    case uBTC: return QString("Micro-EMCs (1 / 1,000,000)");
     default: return QString("???");
     }
 }

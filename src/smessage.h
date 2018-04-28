@@ -166,7 +166,7 @@ public:
 
 
 // -- get at the data
-class CEmCoinAddress_B : public CEmCoinAddress
+class CEMCAddress_B : public CEMCAddress
 {
 public:
     uint8_t getVersion()

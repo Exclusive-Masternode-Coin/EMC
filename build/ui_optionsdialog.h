@@ -54,7 +54,7 @@ public:
     QLabel *label;
     QSpinBox *darksendRounds;
     QLabel *label_2;
-    QSpinBox *anonymizeEmCoin;
+    QSpinBox *anonymizeEMC;
     QWidget *tabNetwork;
     QVBoxLayout *verticalLayout_Network;
     QCheckBox *mapPortUpnp;
@@ -198,14 +198,14 @@ public:
 
         gridLayout->addWidget(label_2, 7, 0, 1, 1);
 
-        anonymizeEmCoin = new QSpinBox(tabMain);
-        anonymizeEmCoin->setObjectName(QStringLiteral("anonymizeEmCoin"));
-        anonymizeEmCoin->setMinimum(2);
-        anonymizeEmCoin->setMaximum(10000);
-        anonymizeEmCoin->setSingleStep(10);
-        anonymizeEmCoin->setValue(1000);
+        anonymizeEMC = new QSpinBox(tabMain);
+        anonymizeEMC->setObjectName(QStringLiteral("anonymizeEMC"));
+        anonymizeEMC->setMinimum(2);
+        anonymizeEMC->setMaximum(10000);
+        anonymizeEMC->setSingleStep(10);
+        anonymizeEMC->setValue(1000);
 
-        gridLayout->addWidget(anonymizeEmCoin, 7, 1, 1, 1);
+        gridLayout->addWidget(anonymizeEMC, 7, 1, 1, 1);
 
         tabWidget->addTab(tabMain, QString());
         tabNetwork = new QWidget();
@@ -399,9 +399,9 @@ public:
         reserveBalanceInfoLabel->setText(QApplication::translate("OptionsDialog", "Reserved amount does not participate in staking and is therefore spendable at any time.", 0));
         reserveBalanceLabel->setText(QApplication::translate("OptionsDialog", "Reserve", 0));
 #ifndef QT_NO_TOOLTIP
-        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start EmCoin after logging in to the system.", 0));
+        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start EMC after logging in to the system.", 0));
 #endif // QT_NO_TOOLTIP
-        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start EmCoin on system login", 0));
+        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start EMC on system login", 0));
 #ifndef QT_NO_TOOLTIP
         label->setToolTip(QApplication::translate("OptionsDialog", "<html><head/><body><p>This setting determines the amount of individual masternodes that an input will be anonymized through. More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
@@ -409,14 +409,14 @@ public:
 #ifndef QT_NO_TOOLTIP
         label_2->setToolTip(QApplication::translate("OptionsDialog", "This amount acts as a threshold to turn off Darksend once it's reached.", 0));
 #endif // QT_NO_TOOLTIP
-        label_2->setText(QApplication::translate("OptionsDialog", "Amount of EmCoin to keep anonymized", 0));
+        label_2->setText(QApplication::translate("OptionsDialog", "Amount of EMC to keep anonymized", 0));
         tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", 0));
 #ifndef QT_NO_TOOLTIP
-        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the EmCoin client port on the router. This only works when your router supports UPnP and it is enabled.", 0));
+        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the EMC client port on the router. This only works when your router supports UPnP and it is enabled.", 0));
 #endif // QT_NO_TOOLTIP
         mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", 0));
 #ifndef QT_NO_TOOLTIP
-        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the EmCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).", 0));
+        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the EMC network through a SOCKS5 proxy (e.g. when connecting through Tor).", 0));
 #endif // QT_NO_TOOLTIP
         connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS5 proxy:", 0));
         proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", 0));
@@ -439,7 +439,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", 0));
         langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", 0));
 #ifndef QT_NO_TOOLTIP
-        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting EmCoin.", 0));
+        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting EMC.", 0));
 #endif // QT_NO_TOOLTIP
         unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", 0));
 #ifndef QT_NO_TOOLTIP

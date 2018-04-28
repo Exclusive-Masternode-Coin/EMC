@@ -285,9 +285,9 @@ public:
         ___qtablewidgetitem10->setText(QApplication::translate("MasternodeManager", "Last Seen", 0));
         QTableWidgetItem *___qtablewidgetitem11 = tableWidget_3->horizontalHeaderItem(5);
         ___qtablewidgetitem11->setText(QApplication::translate("MasternodeManager", "Pubkey", 0));
-        label_2->setText(QApplication::translate("MasternodeManager", "EmCoin Node Count:", 0));
+        label_2->setText(QApplication::translate("MasternodeManager", "EMC Node Count:", 0));
         countLabel->setText(QApplication::translate("MasternodeManager", "0", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MasternodeManager", "EmCoin Network", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MasternodeManager", "EMC Network", 0));
         createButton->setText(QApplication::translate("MasternodeManager", "&Create...", 0));
         QTableWidgetItem *___qtablewidgetitem12 = tableWidget_2->horizontalHeaderItem(0);
         ___qtablewidgetitem12->setText(QApplication::translate("MasternodeManager", "Alias", 0));

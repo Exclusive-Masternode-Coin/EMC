@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef INTERMODALCOIN_ALLOCATORS_H
-#define INTERMODALCOIN_ALLOCATORS_H
+#ifndef EMC_ALLOCATORS_H
+#define EMC_ALLOCATORS_H
 
 #include "support/cleanse.h"
 #include <boost/thread/mutex.hpp>

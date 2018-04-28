@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Add/Edit EmCoin Node</string>
+   <string>Add/Edit EMC Node</string>
   </property>
   <property name="modal">
    <bool>true</bool>

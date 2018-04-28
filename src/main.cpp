@@ -79,12 +79,11 @@ set<pair<COutPoint, unsigned int> > setStakeSeenOrphan;
 
 map<uint256, CTransaction> mapOrphanTransactions;
 map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
-map<uint256, int64_t> mapRejectedBlocks;
 
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "EMCoin Signed Message:\n";
+const string strMessageMagic = "EMC Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
@@ -1356,12 +1355,11 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 }
 
 // miner's coin base reward
-// miner's coin base reward
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
     // Base reward.
 
-    int64_t nSubsidy = 0 * COIN;
+ int64_t nSubsidy = 0 * COIN;
 
     if (nHeight == 1) {
         nSubsidy = 2000000 * COIN; // premine
@@ -1373,13 +1371,13 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
         nSubsidy = 1 * COIN; // instamine prevention
     }
 	else if (nHeight > 250 && nHeight <= 500) {
-        nSubsidy = 2 * COIN; // instamine prevention
+        nSubsidy = 1 * COIN; // instamine prevention
     }
     else if (nHeight > 500 && nHeight <= 2000) {
-        nSubsidy = 3 * COIN; // initial block reward
+        nSubsidy = 1 * COIN; // initial block reward
     }
     else if (nHeight > 2000 && nHeight <= 225000) {
-        nSubsidy = 2 * COIN; // initial block reward
+        nSubsidy = 1 * COIN; // initial block reward
     }
     else if (nHeight > 225000) {
         nSubsidy = 0 * COIN; // initial block reward
@@ -1395,56 +1393,29 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     int64_t nSubsidy = 0;
 
     if (pindexBest->nHeight+1 > 2250 && pindexBest->nHeight+1 <= 225000)  {
-        nSubsidy = 4 * COIN;
+        nSubsidy = 6 * COIN;
     }
     else if (pindexBest->nHeight+1 > 225000 && pindexBest->nHeight+1 <= 400000)  {
-        nSubsidy = 3 * COIN;
+        nSubsidy = 5 * COIN;
     }
     else if (pindexBest->nHeight+1 > 400000 && pindexBest->nHeight+1 <= 600000) {
-        nSubsidy = 2 * COIN;
+        nSubsidy = 4 * COIN;
     }
     else if (pindexBest->nHeight+1 > 600000 && pindexBest->nHeight+1 <= 850000) {
-        nSubsidy = 1 * COIN;
+        nSubsidy = 3 * COIN;
     }
     else if (pindexBest->nHeight+1 > 850000 && pindexBest->nHeight+1 <= 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 0.5 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (pindexBest->nHeight+1 > 2250000) {
 	// end game - further discussion needed
-        nSubsidy = 0.5 * COIN;
+        nSubsidy = 1 * COIN;
         nSubsidy >>= ((pindexBest->nHeight + 225000) / 1050000);
     }
 
     return nSubsidy + nFees;
 }
 
-int64_t GetBlockValue(int nHeight)
-{
-    int64_t nSubsidy = 0;
-
-    if (pindexBest->nHeight+1 > 2250 && pindexBest->nHeight+1 <= 225000)  {
-        nSubsidy = 4 * COIN;
-    }
-    else if (pindexBest->nHeight+1 > 225000 && pindexBest->nHeight+1 <= 400000)  {
-        nSubsidy = 3 * COIN;
-    }
-    else if (pindexBest->nHeight+1 > 400000 && pindexBest->nHeight+1 <= 600000) {
-        nSubsidy = 2 * COIN;
-    }
-    else if (pindexBest->nHeight+1 > 600000 && pindexBest->nHeight+1 <= 850000) {
-        nSubsidy = 1 * COIN;
-    }
-    else if (pindexBest->nHeight+1 > 850000 && pindexBest->nHeight+1 <= 2250000) {
-	// end game - further discussion needed
-        nSubsidy = 0.5 * COIN;
-    } else if (pindexBest->nHeight+1 > 2250000) {
-	// end game - further discussion needed
-        nSubsidy = 0.5 * COIN;
-        nSubsidy >>= ((pindexBest->nHeight + 225000) / 1050000);
-    }
-
-    return nSubsidy;
-}
 static int64_t nTargetTimespan = 5 * 90;
 
 // ppcoin: find last block index up to pindex
@@ -1820,7 +1791,6 @@ bool CTransaction::ConnectInputs(CTxDB& txdb, MapPrevTx inputs, map<uint256, CTx
             nFees += nTxFee;
         }
     }
-
     return true;
 }
 
@@ -2553,7 +2523,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
                 BOOST_FOREACH(const CTxIn& in, tx.vin){
                     if(mapLockedInputs.count(in.prevout)){
                         if(mapLockedInputs[in.prevout] != tx.GetHash()){
-                            LogPrintf("CheckBlock() : found conflicting transaction with transaction lock %s %s\n", mapLockedInputs[in.prevout].ToString().c_str(), tx.GetHash().ToString().c_str());
+                            if(fDebug) { LogPrintf("CheckBlock() : found conflicting transaction with transaction lock %s %s\n", mapLockedInputs[in.prevout].ToString().c_str(), tx.GetHash().ToString().c_str()); }
                             return DoS(0, error("CheckBlock() : found conflicting transaction with transaction lock"));
                         }
                     }
@@ -2564,7 +2534,10 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         if(fDebug) { LogPrintf("CheckBlock() : skipping transaction locking checks\n"); }
     }
 
+
+
     // ----------- masternode payments -----------
+
     bool MasternodePayments = false;
     bool fIsInitialDownload = IsInitialBlockDownload();
 
@@ -2608,7 +2581,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
 
                     CTxDestination address1;
                     ExtractDestination(payee, address1);
-                    CEmCoinAddress address2(address1);
+                    CEMCAddress address2(address1);
 
                     if(!foundPaymentAndPayee) {
                         if(fDebug) { LogPrintf("CheckBlock() : Couldn't find masternode payment(%d|%d) or payee(%d|%s) nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), pindexBest->nHeight+1); }
@@ -2626,8 +2599,16 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
             if(fDebug) { LogPrintf("CheckBlock() : skipping masternode payment checks\n"); }
         }
     } else {
-          if(fDebug) { LogPrintf("CheckBlock() : Is initial download, skipping masternode payment check %d\n", pindexBest->nHeight+1); }
+        if(fDebug) { LogPrintf("CheckBlock() : Is initial download, skipping masternode payment check %d\n", pindexBest->nHeight+1); }
     }
+
+
+
+
+
+
+
+
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, vtx)
@@ -3311,7 +3292,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("emcoin-loadblk");
+    RenameThread("emc-loadblk");
 
     CImportingNow imp;
 
@@ -3607,6 +3588,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         CAddress addrFrom;
         uint64_t nNonce = 1;
         vRecv >> pfrom->nVersion >> pfrom->nServices >> nTime >> addrMe;
+
         if ((pfrom->nVersion < MIN_PEER_PROTO_VERSION) || (nBestHeight >= 1 && pfrom->nVersion < MIN_PEER_PROTO_VERSION_FORK1))
         {
             // disconnect from peers older than this proto version
@@ -4260,24 +4242,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
     return true;
 }
 
-int ActiveProtocol()
-{
-
-    // SPORK_14 was used for 70910. Leave it 'ON' so they don't see > 70910 nodes. They won't react to SPORK_15
-    // messages because it's not in their code
-
-/*    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-*/
-
-    // SPORK_15 is used for 70911. Nodes < 70911 don't see it and still get their protocol version via SPORK_14 and their
-    // own ModifierUpgradeBlock()
-
-    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-}
-
 // requires LOCK(cs_vRecvMsg)
 bool ProcessMessages(CNode* pfrom)
 {
@@ -4609,10 +4573,12 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 	LogPrintf("Not all (150) masternodes have been activated on the network, from count 145 it starts paying MN rewards : %i\n", nMnCount);
 	ret = 0;
 	}
-    else if (nHeight >= 2250 && nHeight <= 225000) {
+    if (nHeight < 1500) {
+	ret = 0;
+    } else if (nHeight >= 1500 && nHeight <= 225000) {
         ret = blockValue * 25 / 27; // 
     } else if (nHeight > 225000) {
-	ret = blockValue / 2 ; // 
+	ret = blockValue / 2 ; //
     }
     return ret;
 }

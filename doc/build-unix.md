@@ -70,7 +70,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 ----------------------------------------------------------------------------------------------------------
 
-If you want to build EmCoin-Qt, make sure that the required packages for Qt development
+If you want to build EMC-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used.
 
@@ -82,7 +82,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a emcoin-qt executable will be
+Once these are installed, they will be found by configure and a emc-qt executable will be
 built by default.
 
 Berkeley DB
@@ -90,10 +90,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-INTERMODALCOIN_ROOT=$(pwd)
+EMC_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the emcoin directory
-BDB_PREFIX="${INTERMODALCOIN_ROOT}/db4"
+# Pick some path to install BDB to, here we create a directory within the emc directory
+BDB_PREFIX="${EMC_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -108,8 +108,8 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure EmCoin Core to use our own-built instance of BDB
-cd $INTERMODALCOIN_ROOT
+# Configure EMC Core to use our own-built instance of BDB
+cd $EMC_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
@@ -118,21 +118,21 @@ Notes
 -----
 1) You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-2) The release is built with GCC and then "strip emcoind" to strip the debug
+2) The release is built with GCC and then "strip emcd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
-To Build EmCoind with compile script
+To Build EMCd with compile script
 ---------------------
 
 The script will take care of setting the permissions and compiling static leveldb:
 
-	cd EmCoin
+	cd EMC
     chmod +x compile.sh
     ./compile.sh
 
 
-To Build EmCoind
+To Build EMCd
 ---------------------
 
 Make sure the scripts have execute permissions:
@@ -149,26 +149,26 @@ Build LevelDB static libs first:
 With UPNP:
 
     make -f makefile.unix
-    strip emcoind
+    strip emcd
 
 Without UPNP (Recommended) :
 
     make -f makefile.unix USE_UPNP=
-    strip emcoind
+    strip emcd
 
 
-To Build EmCoind with compile script
+To Build EMCd with compile script
 ---------------------
 
 The script will take care of setting the permissions and compiling static leveldb:
 
-	cd EmCoin
+	cd EMC
     chmod +x compile-qt.sh
     ./compile-qt.sh
 
 
 
-To Build EmCoin-QT
+To Build EMC-QT
 ---------------------
 
 Build LevelDB static libs first (check for file permissions in case of error)
@@ -206,7 +206,7 @@ If you need to build miniupnpc yourself:
 
 Security
 ---------------------
-To help make your emcoin installation more secure by making certain attacks impossible to
+To help make your emc installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, you can take the following measures:
 
 * Position Independent Executable
@@ -223,7 +223,7 @@ exploit even if a vulnerability is found, you can take the following measures:
     make -f makefile.unix ... -e PIE=1
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
-    scanelf -e ./emcoin
+    scanelf -e ./emc
 
     The output should contain:
      TYPE
@@ -231,13 +231,13 @@ exploit even if a vulnerability is found, you can take the following measures:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, emcoin should be built with a non-executable stack
+    vulnerable buffers are found. By default, emc should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    scanelf -e ./emcoin
+    scanelf -e ./emc
 
     the output should contain:
     STK/REL/PTL
@@ -249,9 +249,9 @@ exploit even if a vulnerability is found, you can take the following measures:
 Example of Configuration file
 ---------------------
 
-	rpcuser=emcoind
+	rpcuser=emcd
 	rpcpassword=vejktejklungwerklcgerkum
-	rpcport=41508
+	rpcport=31508
 	rpcallowip=127.0.0.1
 	listen=1
 	server=1

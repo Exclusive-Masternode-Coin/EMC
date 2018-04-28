@@ -23,7 +23,7 @@
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("emcoin:");
+const QString BITCOIN_IPC_PREFIX("emc:");
 
 //
 // Create a name that is unique for:
@@ -32,7 +32,7 @@ const QString BITCOIN_IPC_PREFIX("emcoin:");
 //
 static QString ipcServerName()
 {
-    QString name("EmCoinQt");
+    QString name("EMCQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path

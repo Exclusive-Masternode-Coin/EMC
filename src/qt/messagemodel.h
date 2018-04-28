@@ -67,7 +67,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to EmCoin Secure Messaging from Qt view code. */
+/** Interface to EMC Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT
