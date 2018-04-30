@@ -23,7 +23,7 @@ Welcome to the future!
 *	Maturity: 90 blocks
 *	Difficulty Retargeting: every block
 *	Total Supply: ~19,340,594
-*	Masternode Rewards: 25 EMCs of the POS blocks since block 1500, after block 210,000 50% of the PoS block reward
+*	Masternode Rewards: Masternodes will start receiving rewards since block 1500 with a minimal masternode count of 145 on the blockchain. Rewards will be 92.6% of the PoS blocks, after block 225000 masternodes are rewarded 50% of the PoS block reward.
 *	PoS coins maturation: 24 hour
 
 
