@@ -29,23 +29,22 @@ Welcome to the future!
 
 #### PoW Rewards:
 
-*	since block 1 : 475,000 (Premine)
-*	since block 2 : 1
-*	since block 101 : 5
-*	since block 201 : 10
-*	since block 301 : 15
-*	since block 401 : 25
-*	since block 1500 : 15
-*	Last PoW Block : 210,000
+* Block 1 – 2000000 (Premine)
+* Block 2 – 100 : 1 EMC
+* Block 101 – 250 : 1 EMC
+* Block 251 – 500 : 1 EMC
+* Block 501 – 2000 : 1 EMC
+* Block 2001 – 225000 : 1 EMC
+* Last POW Block : 225000
 
 
 ##### PoS Rewards:
 
-*	since block 1500 : 35
-*	since block 210,000 : 20
-*	since block 420,001 : 10
-*	since block 630,001 : 5
-*	since block 840,001 : 3
+* Block 2250 – 225000 : 6 EMC
+* Block 225001 – 400000 : 5 EMC
+* Block 400001 – 600000 : 4 EMC
+* Block 600001 – 850000 : 3 EMC
+* Block 850001 – 2250000 : 1 EMC
 
 ###### License
 
