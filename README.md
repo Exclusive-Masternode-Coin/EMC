@@ -40,7 +40,7 @@ Welcome to the future!
 
 ##### PoS Rewards:
 
-* Block 2250 – 225000 : 6 EMC
+* Block 2251 – 225000 : 6 EMC
 * Block 225001 – 400000 : 5 EMC
 * Block 400001 – 600000 : 4 EMC
 * Block 600001 – 850000 : 3 EMC
