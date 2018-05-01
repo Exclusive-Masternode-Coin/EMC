@@ -1,20 +1,7 @@
-# The EMC
+# EMC
 
-We introduce you a new cryptocoin called EMC.
-EMC is a safe, anonymous, fast and highly profitable coin with Masternodes and advanced reward system with Long-Term Development & Support.
-Welcome to the future!
-
-## Main futures:
-
-*	ASIC Resistance
-*	NiceHash Resistance
-*	Nvidia & AMD GPU Mining
-*	Instamine Protection
-*	Wallet Built-in Block Explorer
-*	Masternode Reward Protection
-*	Friendly Masternode Setup
-*	Long-Term Development & Support
-
+Exclusive Masternode Coin  
+EMC is a hybrid cryptocurrency developed with innovative technology and offering unique features. EMC is an exclusive cryptocurrency with masternode technology with a limited number of masternodes in the network, ensuring users a stable ROI.
 
 ### Base Specs:
 
@@ -23,8 +10,20 @@ Welcome to the future!
 *	Maturity: 90 blocks
 *	Difficulty Retargeting: every block
 *	Total Supply: ~20,000,000
-*	Masternode Rewards: Masternodes will start receiving rewards since block 1500 with a minimal masternode count of 145 on the blockchain. Rewards will be 92.6% of the PoS blocks, after block 225000 masternodes are rewarded 50% of the PoS block reward.
 *	PoS coins maturation: 24 hour
+*	Masternode Rewards: Masternodes will start receiving rewards since block 1500 with a minimal masternode count of 145 on the blockchain. Rewards will be 92.6% of the PoS blocks, after block 225000 masternodes are rewarded 50% of the PoS block reward.
+
+
+## Main futures:
+
+*	Instamine Protection
+*	NiceHash Resistance
+*	Nvidia & AMD GPU Mining
+*	ASIC Resistance
+*	Masternode Reward Protection
+*	Wallet Built-in Block Explorer
+*	Friendly Masternode Setup
+*	Long-Term Development & Support
 
 
 #### PoW Rewards:
