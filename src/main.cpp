@@ -1362,7 +1362,7 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
  int64_t nSubsidy = 0 * COIN;
 
     if (nHeight == 1) {
-        nSubsidy = 2000000 * COIN; // premine
+        nSubsidy = 800000 * COIN; // premine
     }
     else if (nHeight > 1 && nHeight <= 100) {
         nSubsidy = 1 * COIN; // instamine prevention
