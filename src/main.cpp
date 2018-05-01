@@ -4570,7 +4570,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 	int nMnCount = mnodeman.CountEnabled();
 
 	if(nMnCount < 95) {
-	LogPrintf("Not all (150) masternodes have been activated on the network, from count 95 it starts paying MN rewards : %i\n", nMnCount);
+	LogPrintf("Not all (100) masternodes have been activated on the network, from count 95 it starts paying MN rewards : %i\n", nMnCount);
 	ret = 0;
 	}
     if (nHeight < 1500) {
