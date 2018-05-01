@@ -63,7 +63,7 @@ static void getHardcodedSeeds(std::vector<CAddress> &vSeedsOut)
     const int64_t oneWeek = 7 * 24 * 60 * 60;
     for (size_t i = 0; i < ips.size(); ++i)
     {
-        CAddress addr(CService(ips[i], 31507));
+        CAddress addr(CService(ips[i], 21507));
         addr.nTime = GetTime() - GetRand(oneWeek) - oneWeek;
         vSeedsOut.push_back(addr);
     }
@@ -80,11 +80,11 @@ public:
         pchMessageStart[2] = 0xdb;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("MHQCAQEEIPpijy/5b8N+O4Blg9DtpBHfIeHn8DecH9RKKBQx7hDSoAcGBSuBBAAKoUQDQgAE1y5S+Q2EcaTbs4vzgO2DOeB1Nb7nS0O1vki9yI3W4ecu7x6FwYLfqZMSWBz63gKPpnJQEWZQ+lIOY/ew4wXdRg==");
-        nDefaultPort = 31507;
-        nRPCPort = 31508;
+        nDefaultPort = 21507;
+        nRPCPort = 21508;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16); // starting difficulty is 1 / 2^12
 
-        const char* pszTimestamp = "Carlo Calucci - Exclusive Masternode Coin (EMC) 27-04-2018";
+        const char* pszTimestamp = "Carlo Calucci - Exclusive Masternode Coin (EMC) 01-05-2018";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -93,7 +93,7 @@ public:
         vout[0].SetEmpty();
 
 	// original 1516154401
-        CTransaction txNew(1, 1524860309, vin, vout, 0);
+        CTransaction txNew(1, 1525191146, vin, vout, 0);
 
         LogPrintf("genesis mainnet transaction:  %s\n", txNew.ToString().c_str());
 
@@ -102,18 +102,18 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1524860228; // 27-04-2018
+        genesis.nTime    = 1525191130; // 01-05-2018
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 415077;
 
         hashGenesisBlock = genesis.GetHash();
 
-        //LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
-	    //LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
+	    LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 		
-        assert(hashGenesisBlock == uint256("cc6199f14f601742bcfa3ab539020d6d4627a4aee12471eb5f1a06cc5b34c528"));
-        assert(genesis.hashMerkleRoot == uint256("4dbcf7bc95210e1aa235bc8438ac9d974da36da4f9eb9b4293b87c3d4242ccc9"));
+        assert(hashGenesisBlock == uint256(""));
+        assert(genesis.hashMerkleRoot == uint256(""));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,33); // E
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,21);
@@ -176,11 +176,11 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        //LogPrintf("Display test genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
-	    //LogPrintf("Display test merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        LogPrintf("Display test genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
+	    LogPrintf("Display test merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(genesis.hashMerkleRoot == uint256("4dbcf7bc95210e1aa235bc8438ac9d974da36da4f9eb9b4293b87c3d4242ccc9"));
-        assert(hashGenesisBlock == uint256("96e3fe21137b9d992a45050d0d3c2a5da4befa43d5b755327ff5b0ebf9bf98f6"));
+        assert(genesis.hashMerkleRoot == uint256(""));
+        assert(hashGenesisBlock == uint256(""));
 
         vFixedSeeds.clear();
         vSeeds.clear();

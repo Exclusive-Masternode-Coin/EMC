@@ -46,14 +46,14 @@ void CActiveMasternode::ManageStatus()
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString().c_str());
 
         if(Params().NetworkID() == CChainParams::MAIN) {
-            if(service.GetPort() != 31507) {
-                notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - only 31507 is supported on mainnet.";
+            if(service.GetPort() != 21507) {
+                notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - only 21507 is supported on mainnet.";
                 status = MASTERNODE_NOT_CAPABLE;
                 LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
                 return;
             }
-        } else if(service.GetPort() == 31507) {
-            notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - 31507 is only supported on mainnet.";
+        } else if(service.GetPort() == 21507) {
+            notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - 21507 is only supported on mainnet.";
         }
 
         if(!ConnectNode((CAddress)service, service.ToString().c_str())){
@@ -289,9 +289,9 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
             return false;
         }
     }
-	if(nMnCount > 150 )
+	if(nMnCount > 100 )
         {
-            LogPrintf("ActiveMasternode::Register - The limit of 150 Masternodes has been reached on the EMC Blockchain\n");
+            LogPrintf("ActiveMasternode::Register - The limit of 100 Masternodes has been reached on the EMC Blockchain\n");
             return false;
         }
 	return Register(vin, CService(strService, true), keyCollateralAddress, pubKeyCollateralAddress, keyMasternode, pubKeyMasternode, donationAddress, donationPercentage, errorMessage);
@@ -329,9 +329,9 @@ bool CActiveMasternode::Register(CTxIn vin, CService service, CKey keyCollateral
         mn.UpdateLastSeen(masterNodeSignatureTime);
         mnodeman.Add(mn);
     }
-		if(nMnCount > 150 )
+		if(nMnCount > 100 )
         {
-            LogPrintf("ActiveMasternode::Register - The limit of 150 Masternodes has been reached on the EMC Blockchain\n");
+            LogPrintf("ActiveMasternode::Register - The limit of 100 Masternodes has been reached on the EMC Blockchain\n");
             return false;
         }
 
