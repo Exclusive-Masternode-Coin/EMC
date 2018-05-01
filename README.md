@@ -1,6 +1,6 @@
 # EMC
 
-EMC is a hybrid cryptocurrency developed with innovative technology and offering unique features. EMC is an exclusive cryptocurrency with masternode technology with a limited number of masternodes in the network, ensuring users a stable ROI.
+EMC is a hybrid cryptocurrency developed with innovative technology and offering unique features. It is an exclusive cryptocurrency with masternode technology combining both PoW & PoS. With a limited number of 100 masternodes, ensuring users a stable ROI.
 
 ### Base Specs:
 
