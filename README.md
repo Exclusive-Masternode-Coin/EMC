@@ -29,7 +29,7 @@ Welcome to the future!
 
 #### PoW Rewards:
 
-* Block 1 – 2000000 (Premine)
+* Block 1 – 800000 (Premine)
 * Block 2 – 100 : 1 EMC
 * Block 101 – 250 : 1 EMC
 * Block 251 – 500 : 1 EMC
