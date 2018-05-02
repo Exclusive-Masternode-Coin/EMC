@@ -10,7 +10,7 @@ EMC is a hybrid cryptocurrency developed with innovative technology and offering
 *	Difficulty Retargeting: every block
 *	Total Supply: ~20,000,000
 *	PoS coins maturation: 24 hour
-*	Masternode Rewards: Masternodes will start receiving rewards since block 1500 with a minimal masternode count of 145 on the blockchain. Rewards will be 92.6% of the PoS blocks, after block 225000 masternodes are rewarded 50% of the PoS block reward.
+*	Masternode Rewards: Masternodes will start receiving rewards since block 1500 with a minimal masternode count of 95 on the blockchain. Rewards will be 92.6% of the PoS blocks, after block 225000 masternodes are rewarded 50% of the PoS block reward.
 
 
 ## Main futures:
